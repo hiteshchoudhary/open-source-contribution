@@ -1,6 +1,6 @@
 
 
-
+## Contribute karne ka tareeka thoda _kezual_ hai
 
 
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
