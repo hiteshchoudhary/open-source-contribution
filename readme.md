@@ -1,11 +1,7 @@
-
-
-
-
+# koi bkl hi hoga jo abhi tak ye video nhi dekha aur mujhe follow nhi kiya h https://github.com/nayandeep111 @nayandeep111
+![image](https://github.com/nayandeep111/open-source-contribution/assets/115107146/f5f935db-7f73-4f54-80e4-d4377ee6f70f)
 
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
-
-
 
 ### Welcome to the Beginner-Friendly ReadMe Repo!
 
