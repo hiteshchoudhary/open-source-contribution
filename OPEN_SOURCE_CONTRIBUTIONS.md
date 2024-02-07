@@ -69,8 +69,6 @@ After making contributions to open source projects, consider sharing your experi
 
 Sharing your experience not only helps inspire others but also contributes to the growth and sustainability of the open source ecosystem.
 
-Thank you for taking the time to read through this guide! I hope you found it helpful and inspiring. If you enjoyed learning about open source contributions and want to connect further, feel free to reach out to me on GitHub. Let's collaborate and make a positive impact together in the world of open source software!
-
 Happy coding!
 
 [Connect with me on github](https://github.com/vikramsamak)
