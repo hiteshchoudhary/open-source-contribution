@@ -1,7 +1,6 @@
-
-
-
-
+<p align="center">
+    <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc3A8R5SUQCtXtvq_dg30bUUXjCOkev4xY2EUQx12FGw&s" alt="Chipi cat">
+</p>
 
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
 
