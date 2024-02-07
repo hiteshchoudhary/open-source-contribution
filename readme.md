@@ -2,7 +2,9 @@
 
 
 
+
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
+
 
 
 ### Welcome to the Beginner-Friendly ReadMe Repo!
@@ -27,6 +29,9 @@ Are you new to the world of open source but eager to make your mark? Look no fur
 
 #### Guidelines
 
+# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+
+
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
   
 - **Quality Over Quantity:** Focus on delivering high-quality contributions rather than simply churning out content. Attention to detail and thoughtful suggestions are always appreciated.
@@ -44,6 +49,9 @@ Feel free to customize and adapt this content to suit the specific needs and ton
 
 # <Your-Project-Title> 
 
+# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+
+
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
@@ -54,6 +62,9 @@ Provide a short description explaining the what, why, and how of your project. U
 - What did you learn?
 
 ## Table of Contents (Optional)
+
+# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
 
@@ -77,6 +88,9 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
     ```
 
 ## Credits
+
+# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+
 
 List your collaborators, if any, with links to their GitHub profiles.
 
@@ -108,6 +122,9 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
+# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+
+
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
 
 ser plej merge I want green on graph open source contribution go brrrrr
@@ -122,7 +139,12 @@ Inclusivity: Welcoming newcomers with diverse backgrounds and expertise, valuing
 Impact: Striving to create something bigger than individual interests, building meaningful solutions together.
 
 Am I now an open-source contributor? xD
-my first PR :)
+my first PR 
+WOW 
+
+
+
+# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
 
 
 first PR
