@@ -1,7 +1,10 @@
 
 
 
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+
+
+### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
+
 
 
 ### Welcome to the Beginner-Friendly ReadMe Repo!
