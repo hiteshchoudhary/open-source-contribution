@@ -27,6 +27,8 @@ Are you new to the world of open source but eager to make your mark? Look no fur
   
 3. **Submit a Pull Request:** Once you're ready, submit a pull request with your changes. Remember to keep the language respectful and inclusive.
 
+4. **Discover Opportunities:** Begin by immersing yourself in the repository. Take a journey through its contents to understand its structure and potential areas for improvement or contribution.
+
 #### Guidelines
 
 # koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
