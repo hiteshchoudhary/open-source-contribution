@@ -136,7 +136,8 @@ Inclusivity: Welcoming newcomers with diverse backgrounds and expertise, valuing
 Impact: Striving to create something bigger than individual interests, building meaningful solutions together.
 
 Am I now an open-source contributor? xD
-my first PR :)
+my first PR 
+WOW 
 
 
 
