@@ -1,4 +1,5 @@
-I am open source contributor saar trust me its take a lots of courage to this 
+I am open source contributor so trust me it takes a lot of courage to achieve this 
+
 
 //making a pull req only for funny purpose, Thanks
 
@@ -8,3 +9,6 @@ Pata nahi kyu companies ko main pasand hi nahi aata
 
 
 Ab meri job pkki
+
+making a pull req only for funny purposes, Thanks
+
