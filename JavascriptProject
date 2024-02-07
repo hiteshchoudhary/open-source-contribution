@@ -1,0 +1,50 @@
+## I think JS projects are left behind in Stackblitz so did anyone completed that send the JS code here
+
+# Stackblitz project 10
+``` javascript
+
+const btn = document.querySelector('#emoji');
+const emojis = [
+  '😆',
+  '😅',
+  '🤣',
+  '😂',
+  '😀',
+  '🤑',
+  '🤨',
+  '🙂',
+  '😊',
+  '😗',
+  '😛',
+  '😏',
+  '🤥',
+  '😴',
+  '🥺',
+  '😧',
+  '😇',
+  '😳',
+  '🙃',
+  '🥴',
+  '🧐',
+  '🤨',
+  '😒',
+  '🤔',
+  '🤭',
+  '🥰',
+  '🤐',
+  '👀',
+  '🤔',
+  '🤪',
+  '🥲',
+  '😃',
+  '😁',
+  '😬',
+];
+btn.addEventListener('mouseover', (e) => {
+  // console.log('Mouse Over');
+  // console.log(emojis.length);
+  // console.log(parseInt(Math.random() * emojis.length));
+  let randomPos = parseInt(Math.random() * emojis.length);
+  btn.innerText = emojis[randomPos];
+});
+```
