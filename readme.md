@@ -1,4 +1,4 @@
-
+Thanks hitesh sir for making best React Series.
 
 
 
