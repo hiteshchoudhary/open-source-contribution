@@ -1,4 +1,4 @@
-
+bc
 
 
 
@@ -162,3 +162,8 @@ A big thanks to the hitesh sir for providing the open soource contribution and i
 I loved your all the series mainly (backend , React and javascript) 
 
 Again a heartful thaks a lot for providing such content
+I want to express my heartfelt gratitude to Hitesh sir for providing invaluable resources on open source contribution. This marks my first contribution to a repository, and I'm thrilled to be a part of this community.
+
+I thoroughly enjoyed all the series, especially the ones on backend, React, and JavaScript. Thank you, sir, for sharing such insightful content and making it accessible to everyone.
+
+Here's to many more contributions and learning experiences ahead! 🚀
