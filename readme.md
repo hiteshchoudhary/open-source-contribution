@@ -162,3 +162,36 @@ A big thanks to the hitesh sir for providing the open soource contribution and i
 I loved your all the series mainly (backend , React and javascript) 
 
 Again a heartful thaks a lot for providing such content
+
+# I have nothing to say so here is how to make SAMOSA 
+
+## Samosa Recipe:
+### Ingredients:
+2 cups all-purpose flour
+2 tbsp oil
+1/2 tsp salt
+Water (for kneading)
+2 medium potatoes (boiled and mashed)
+1/2 cup green peas (boiled)
+1 small onion (finely chopped)
+2 green chilies (finely chopped)
+1 tsp ginger-garlic paste
+Spices: cumin seeds, turmeric, coriander powder, garam masala
+Salt to taste
+Oil for frying
+### Instructions:
+Dough:
+
+Mix flour, salt, and oil. Knead into a firm dough with water. Rest for 30 mins.
+Filling:
+
+Sauté onions, green chilies, and cumin seeds.
+Add ginger-garlic paste, potatoes, peas, spices, salt. Cook till fragrant.
+Assembly:
+
+Roll dough into circles, cut in half.
+Fold into cones, fill with potato mixture, seal edges.
+Deep fry till golden brown.
+Enjoy your crispy and flavorful samosas!
+
+## SIR AB TOH JOB MILJAyEGA NA ..sIrr..siir.. koi haiii?
