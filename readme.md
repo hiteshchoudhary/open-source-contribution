@@ -1,6 +1,7 @@
 
 
-# Koi BKL 🤡 Hi hoga jo Contribute krega. 🤑
+
+
 
 
 ### Welcome to the Beginner-Friendly ReadMe Repo!
@@ -40,7 +41,7 @@ Feel free to customize and adapt this content to suit the specific needs and ton
 -- i eat link kernal with foss milk very morning 
 
 
-# <Your-Project-Title>
+# <Your-Project-Title> 
 
 ## Description
 
@@ -107,7 +108,7 @@ If you created an application or package and would like other developers to cont
 ## Tests
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
-=======
+
 ser plej merge I want green on graph open source contribution go brrrrr
 
 
@@ -125,5 +126,6 @@ my first PR :)
 
 first PR
 lol
+
 
 
