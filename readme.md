@@ -162,3 +162,6 @@ A big thanks to the hitesh sir for providing the open soource contribution and i
 I loved your all the series mainly (backend , React and javascript) 
 
 Again a heartful thaks a lot for providing such content
+
+# First open source contribution my coding journey @Chai aur Code Youtube Free of Cost
+I have watched many tutorials for learning web development and I have encountered issues with some tutorials. However, I came across Hitesh Sir's YouTube channel, particularly his playlist section, and I was happy to realize that I could also learn web development there. His channel, 'Chai aur Code,' has been incredibly beneficial to me. What sets it apart is that Hitesh Sir doesn't just focus on theory; he emphasizes learning by building projects and understanding the underlying concepts. Learning React in this manner has been the best approach for me. After gaining a strong foundation in JavaScript and React through his tutorials, I've completed numerous projects and feel confident in my knowledge. Now, I'm diving into Hitesh Sir's Backend playlist. I want to express my gratitude to Hitesh Sir for his invaluable contribution to my learning journey. Thank you, Hitesh Sir! @Contribute by TOUFIK
