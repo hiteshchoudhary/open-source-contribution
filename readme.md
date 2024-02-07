@@ -1,8 +1,8 @@
-### Welcome to the Beginner-Friendly ReadMe Repo!
+### Welcome to the Beginner-Friendly ReadMe Repo! ✋
 
 Are you new to the world of open source but eager to make your mark? Look no further! This repository is specifically designed for beginners who may feel hesitant or unsure about contributing to open source projects. Here, you'll find a welcoming space to learn, practice, and grow your skills while making meaningful contributions to a collaborative community.
 
-#### Why Contribute Here?
+#### Why Contribute Here? 🤔
 
 - **No Pressure, Just Fun:** There's no need to feel intimidated or pressured here. Whether you're a seasoned developer or just starting out, everyone is encouraged to participate at their own pace.
   
@@ -10,7 +10,7 @@ Are you new to the world of open source but eager to make your mark? Look no fur
   
 - **Friendly Community:** You're not alone! Our community is here to support and guide you every step of the way. Don't hesitate to reach out for help or advice.
   
-#### How to Contribute
+#### How to Contribute ❓
 
 1. **Explore:** Take some time to explore the repository. Familiarize yourself with the existing content and see where you can add value.
   
@@ -18,7 +18,7 @@ Are you new to the world of open source but eager to make your mark? Look no fur
   
 3. **Submit a Pull Request:** Once you're ready, submit a pull request with your changes. Remember to keep the language respectful and inclusive.
 
-#### Guidelines
+#### Guidelines ✅
 
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
   
