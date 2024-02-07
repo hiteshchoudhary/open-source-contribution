@@ -1,4 +1,52 @@
 
+    
+    Basmati Rice: 2 cups
+    Chicken or Meat: 500 grams (cut into pieces) or vegetables for a vegetarian version
+    Onions: 2 large (sliced)
+    Tomatoes: 2 medium (chopped)
+    Yogurt: 1/2 cup
+    Ginger-Garlic Paste: 2 tablespoons
+    Biryani Masala: 2 tablespoons (you can use store-bought or make your own blend of spices)
+    Green Chilies: 2-3 (slit)
+    Mint Leaves: a handful (chopped)
+    Coriander Leaves: a handful (chopped)
+    Whole Spices:
+        Bay leaves: 2
+        Cinnamon sticks: 2-inch piece
+        Cardamom pods: 4-5
+        Cloves: 4-5
+    Cooking Oil or Ghee: 4 tablespoons
+    Saffron Strands: a pinch (soaked in warm milk)
+    Fried Onions (Birista): for garnishing
+    Salt: to taste
+    Water: 4 cups (for cooking rice)
+    Kewra Water or Rose Water: a few drops (optional)
+
+Biryani Masala (optional, if not using store-bought):
+
+    Cumin seeds (jeera): 1 teaspoon
+    Coriander seeds: 1 teaspoon
+    Fennel seeds (saunf): 1 teaspoon
+    Black peppercorns: 1/2 teaspoon
+    Whole cloves: 4-5
+    Green cardamom pods: 4-5
+    Cinnamon stick: 1-inch piece
+    Nutmeg: a small piece (grated)
+    Mace (javithri): a small piece
+
+Instructions:
+
+    Rinse the basmati rice and soak it in water for 30 minutes. Drain before cooking.
+    In a large pot, bring water to a boil, add rice, and cook until it's 70-80% done. Drain and set aside.
+    In a separate pan, heat oil or ghee, add whole spices, sliced onions, and sauté until the onions turn golden brown.
+    Add ginger-garlic paste, green chilies, and chopped tomatoes. Cook until the tomatoes are soft.
+    Add chicken or meat (or vegetables), biryani masala, yogurt, mint leaves, coriander leaves, and salt. Cook until the meat is partially cooked.
+    In a thick-bottomed pan or biryani pot, layer half of the partially cooked rice, followed by the meat or vegetable mixture, and then the remaining rice.
+    Sprinkle saffron-soaked milk on top, add a few fried onions (Birista), and optionally, kewra water or rose water.
+    Cover the pot with a tight-fitting lid or seal with aluminum foil. Cook on low heat (dum) for 20-25 minutes until the rice is fully cooked and aromatic.
+    Gently fluff the biryani with a fork before serving.
+
+    
 
 
 
