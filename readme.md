@@ -1,3 +1,8 @@
+<<<<<<< main
+
+
+
+
 ### Welcome to the Beginner-Friendly ReadMe Repo!
 
 Are you new to the world of open source but eager to make your mark? Look no further! This repository is specifically designed for beginners who may feel hesitant or unsure about contributing to open source projects. Here, you'll find a welcoming space to learn, practice, and grow your skills while making meaningful contributions to a collaborative community.
@@ -102,3 +107,6 @@ If you created an application or package and would like other developers to cont
 ## Tests
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+=======
+ser plej merge I want green on graph open source contribution go brrrrr
+>>>>>>> main
