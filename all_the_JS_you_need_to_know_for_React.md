@@ -1,4 +1,4 @@
-a sort-of guide to revise/learn JS 
+a sort-of guide to revise/learn Javascript specifically to start learning react.js
 
 ## 1) Basics of JavaScript 
 - [ ] Variables (how variables work) 
@@ -45,10 +45,12 @@ a sort-of guide to revise/learn JS
 
 ## 9) Try Catch
 
-### note
+### Note
 - Use arrow functions for cleaner code and better callback handling.
 - Utilize ternary operators for concise conditionals in React's JSX.
 - Understand object destructuring and copying with spread operator.
 - Employ the `.map()` function for rendering dynamic lists in React.
 - Use `.filter()` function to manipulate and filter arrays in React. Understanding searching and filtering through lists using `.filter()` function.
 - Key concepts: Promises, async/await, and data fetching with Fetch API are crucial for web development and communication with APIs.
+
+Thank you for the read, Happy Coding <3.
