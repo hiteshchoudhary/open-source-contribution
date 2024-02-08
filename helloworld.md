@@ -133,4 +133,4 @@ Below are examples of "Hello, World!" programs in various programming languages:
 <p align="center">
   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a2cd1f6c-da50-4bbe-89ac-77c7fc19e466/df2f775-6b25bf52-c5d3-46b7-987a-a2773b3e86a2.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2EyY2QxZjZjLWRhNTAtNGJiZS04OWFjLTc3YzdmYzE5ZTQ2NlwvZGYyZjc3NS02YjI1YmY1Mi1jNWQzLTQ2YjctOTg3YS1hMjc3M2IzZTg2YTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.iRsSQ60UMHYU_s2z6uK4FM0OwNuHV42HSF8Nt04jG1I" width="100" height="100" style="display:block;margin:auto;">
 </p>
-Ok Bye🙂
+Ok Bye🙂🙂
