@@ -40,7 +40,7 @@ Are you new to the world of open source but eager to make your mark? Look no fur
 
 #### Guidelines
 
-# koi BKL(abuse not abuse) 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL(abuse not abuse) 🤡 hi hoga jo yha contribute nhi Krega . 🤑 | kardiya ab khush
 
 
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
@@ -62,7 +62,7 @@ Feel free to customize and adapt this content to suit the specific needs and ton
 
 # <Your-Project-Title> 
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑 | kardiya ab khush
 
 
 ## Description
@@ -104,7 +104,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑 | kardiya ab khush
 
 
 List your collaborators, if any, with links to their GitHub profiles.
@@ -137,7 +137,7 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑 | kardiya ab khush
 
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
@@ -159,7 +159,7 @@ WOW
 
 # First PR
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑 | kardiya ab khush
 
 
 first PR
