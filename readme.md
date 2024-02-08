@@ -33,7 +33,7 @@ Are you new to the world of open source but eager to make your mark? Look no fur
 
 #### Guidelines
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL(abuse not abuse) 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
