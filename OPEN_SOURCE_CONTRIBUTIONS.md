@@ -4,7 +4,7 @@
 
 Open source contributions mean helping to make free software better. This includes:
 
-- Adding New Stuff: Making new things for the software.
+- Adding New Stuff: Making new things to the software.
 
 - Fixing Problems: Finding and fixing issues in the software.
 
