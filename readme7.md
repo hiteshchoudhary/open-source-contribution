@@ -1,1 +1,0 @@
-jokers X readme contributors
