@@ -1,11 +1,17 @@
+# koi bkl hi hoga jo abhi tak ye video nhi dekha hoga
+![image](https://github.com/hiteshchoudhary/open-source-contribution/assets/115107146/5ed6deda-6ba5-433c-8576-fc676d15c3de)
 
+<p align="center">
+  <img width="460" height="300" src="https://media1.tenor.com/m/YVvy33N0zqsAAAAd/arpit-bala-arpit.gif">
+</p>
 
-
-
+<p align="center">
+  <img width="460" height="300" src="https://media1.tenor.com/m/MCn_GMSSqAsAAAAd/lol-laughing-hysterically.gif">
+</p>
 
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
 
-
+###thanks for this initiative.
 
 ### Welcome to the Beginner-Friendly ReadMe Repo!
 
@@ -31,7 +37,7 @@ Are you new to the world of open source but eager to make your mark? Look no fur
 
 #### Guidelines
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+# koi BKL(abuse not abuse) 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
@@ -59,6 +65,8 @@ Provide a short description explaining the what, why, and how of your project. U
 ## Table of Contents (Optional)
 
 # koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+
+# Hwllo
 
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -136,7 +144,7 @@ Am I now an open-source contributor? xD
 my first PR 
 WOW 
 
-
+# First PR
 
 # koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
@@ -144,11 +152,11 @@ WOW
 first PR
 lol
 
+The One Who is commenting here will be the next CEO of google Ashii.
+
 
 # First PR
 
 A big thanks to the Hitesh sir for providing the open source contribution and it's my first contribution
 
 I loved all the series mainly (backend, React and javascript) 
-
-Again a heartful thanks a lot for providing such content
