@@ -1,3 +1,1 @@
-# repo refreshed
-
-Repo is refreshed.
+## Contribute karne ka tareeka thoda _kezual_ hai
