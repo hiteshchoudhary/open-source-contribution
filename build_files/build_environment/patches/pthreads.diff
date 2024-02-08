@@ -1,0 +1,12 @@
+diff -Naur orig/Makefile external_pthreads/Makefile
+--- orig/Makefile	2018-08-08 04:47:40 -0600
++++ external_pthreads/Makefile	2020-05-09 11:20:28 -0600
+@@ -185,7 +185,7 @@
+ 	@ $(MAKE) /E /nologo XCFLAGS="/MTd" EHFLAGS="$(VSEFLAGSD) /D__PTW32_STATIC_LIB /D__PTW32_BUILD_INLINED" CLEANUP=__PTW32_CLEANUP_SEH pthreadVSE$(PTW32_VER_DEBUG).inlined_static_stamp
+ 
+ VC-static:
+-	@ $(MAKE) /E /nologo XCFLAGS="/MT" EHFLAGS="$(VCFLAGS) /D__PTW32_STATIC_LIB /D__PTW32_BUILD_INLINED" CLEANUP=__PTW32_CLEANUP_C pthreadVC$(PTW32_VER).inlined_static_stamp
++	@ $(MAKE) /E /nologo XCFLAGS="/MD" EHFLAGS="$(VCFLAGS) /D__PTW32_STATIC_LIB /D__PTW32_BUILD_INLINED" CLEANUP=__PTW32_CLEANUP_C pthreadVC$(PTW32_VER).inlined_static_stamp
+ 
+ VC-static-debug:
+ 	@ $(MAKE) /E /nologo XCFLAGS="/MTd" EHFLAGS="$(VCFLAGSD) /D__PTW32_STATIC_LIB /D__PTW32_BUILD_INLINED" CLEANUP=__PTW32_CLEANUP_C pthreadVC$(PTW32_VER_DEBUG).inlined_static_stamp

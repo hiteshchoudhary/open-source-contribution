@@ -1,0 +1,19 @@
+/* Hide home icon in search area */
+.wy-side-nav-search > a:hover {background: none; opacity: 0.9}
+.wy-side-nav-search > a.icon::before {content: none}
+
+.wy-nav-content {
+    max-width: 1000px !important;
+}
+
+/* Fix long titles on mobile */
+h1, h2, h3, h4, h5, h6 {word-break: break-all}
+
+/* Temp fix for https://github.com/readthedocs/sphinx_rtd_theme/pull/1109 */
+.hlist tr {
+   display: -ms-flexbox;
+   display: flex;
+   flex-flow: row wrap;
+ }
+
+.hlist td {margin-right: auto}
