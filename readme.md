@@ -1,3 +1,3 @@
-# repo refreshed
+# repository refreshed
 
 Repo is refreshed.
