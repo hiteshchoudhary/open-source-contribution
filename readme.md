@@ -31,7 +31,6 @@ Are you new to the world of open source but eager to make your mark? Look no fur
 
 #### Guidelines
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
@@ -53,7 +52,7 @@ Feel free to customize and adapt this content to suit the specific needs and ton
 
 # <Your-Project-Title> 
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+
 
 
 ## Description
@@ -67,7 +66,7 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Table of Contents (Optional)
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+
 
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -93,7 +92,6 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 List your collaborators, if any, with links to their GitHub profiles.
@@ -126,7 +124,7 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+
 
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
@@ -148,7 +146,7 @@ WOW
 
 
 
-# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+
 
 
 first PR
