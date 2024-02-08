@@ -2,7 +2,8 @@
 
 | No   | Title                                    | Implementation                                                      |
 | --- | ---------------------------------------- | ------------------------------------------------------------- |
-| 1   | LinkedList Implementation            | [Click Here](https://github.com/hiteshchoudhary/open-source-contribution/blob/main/Java/Only%20Data%20Structure%20Implementation/LinkedList/LinkedList.java)
+| 1   | LinkedList Impementation            | [Click Here](https://github.com/hiteshchoudhary/open-source-contribution/blob/main/Java/Only%20Data%20Structure%20Implementation/LinkedList/LinkedList.java)
+| 2   | ArrayList Impementation            | [Click Here](https://github.com/hiteshchoudhary/open-source-contribution/blob/main/Java/Only%20Data%20Structure%20Implementation/ArrayList/ArrayList.java)
 
 
 ## Contributing 🧑🏽‍💻
