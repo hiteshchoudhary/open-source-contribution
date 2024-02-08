@@ -1,7 +1,7 @@
 
-
-
-
+<p align="center">
+  <img width="460" height="300" src="https://media1.tenor.com/m/YVvy33N0zqsAAAAd/arpit-bala-arpit.gif">
+</p>
 
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
 
@@ -31,7 +31,7 @@ Are you new to the world of open source but eager to make your mark? Look no fur
 
 #### Guidelines
 
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 - **Respectful Communication:** We value diversity and inclusivity. Please refrain from using abusive or discriminatory language in your contributions.
@@ -48,10 +48,12 @@ Feel free to customize and adapt this content to suit the specific needs and ton
 -- me is phull stack dev saar , me will getz naukri saar ,foss ssaar 
 -- i eat link kernal with foss milk very morning 
 
+<h1>KiYa IcHe MujjHee JOB wa Milungi ???</h1>
+
 
 # <Your-Project-Title> 
 
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 ## Description
@@ -65,7 +67,9 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Table of Contents (Optional)
 
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
+
+# Hwllo
 
 
 If your README is long, add a table of contents to make it easy for users to find what they need.
@@ -91,7 +95,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 List your collaborators, if any, with links to their GitHub profiles.
@@ -124,7 +128,7 @@ If you created an application or package and would like other developers to cont
 
 ## Tests
 
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 Go the extra mile and write tests for your application. Then provide examples on how to run them here.
@@ -144,13 +148,66 @@ Am I now an open-source contributor? xD
 my first PR 
 WOW 
 
+# First PR
 
-
-# koi BKL 🤡 hi hoga jo yha contribute Krega . 🤑
+# koi BKL 🤡 hi hoga jo yha contribute nhi Krega . 🤑
 
 
 first PR
 lol
 
+The One Who is commenting here will be the next CEO of google Ashii.
 
+
+# First PR
+
+A big thanks to the hitesh sir for providing the open soource contribution and its my first contribution
+
+I loved your all the series mainly (backend , React and javascript) 
+
+Again a heartful thaks a lot for providing such content
+
+
+# Distributed Systems Overview
+
+## Characteristics
+
+1. **Resource Sharing**: Nodes in the distributed system can share resources like data, processing power, and storage.
+2. **Concurrency**: Multiple tasks can be executed simultaneously in a distributed system.
+3. **Scalability**: It can easily accommodate the addition of more nodes to handle increasing loads.
+4. **Fault Tolerance**: Failure of one node does not lead to the failure of the entire system.
+5. **Transparency**: Users perceive the distributed system as a single coherent system, hiding the distribution of resources.
+6. **Heterogeneity**: Nodes in the system may have different hardware, operating systems, and programming languages.
+
+## Application Areas
+
+1. **Finance and Commerce**: Online banking, stock trading platforms.
+2. **Information Society**: Social media networks.
+3. **Cloud Technology**: SAP (Systems, Applications, and Products in Data Processing) services.
+4. **Entertainment**: Streaming platforms, online gaming.
+5. **Healthcare**: Electronic medical records systems, telemedicine platforms.
+
+## Advantages
+
+1. Nodes can easily share data with each other.
+2. Scalability allows for the addition of more nodes.
+3. Fault tolerance ensures system reliability.
+4. Resources like printers can be shared among multiple nodes.
+
+## Disadvantages
+
+1. Security can be challenging to ensure across all nodes and connections.
+2. Data loss can occur during transmission between nodes.
+3. Managing the database in a distributed system can be complex.
+4. Network overloading may happen if all nodes attempt to send data simultaneously.
+
+## Design Challenges
+
+- **Network Creation**: Establishing connections between nodes.
+- **Computer Hardware Compatibility**: Ensuring compatibility across different hardware configurations.
+- **Operating Systems**: Handling diverse operating systems on various nodes.
+- **Programming Languages**: Supporting different programming languages used by nodes.
+- **Implementation Consistency**: Ensuring consistency in system implementation across different developers.
+- **Openness**: Extensibility and re-implementation of the system with shared resources.
+- **Security**: Protecting against unauthorized access, interference, and data alteration or corruption.
 
