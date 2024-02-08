@@ -8,5 +8,6 @@
 ## Contributing 🧑🏽‍💻
 
 Contributions are welcome! Feel free to open a pull request if you have a better solution or want to add solutions.
+- Added Java template for competitive programming.
 
 
