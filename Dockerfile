@@ -13,11 +13,6 @@ WORKDIR /app
 # It assumes that there is a requirements.txt file in the /app directory that lists these dependencies.
 RUN pip install -r requirements.txt
 
-# Inform Docker that the container listens on the specified network port at runtime.
-# In this case, it's port 5000. This does not actually publish the port.
-# Example 5000 is Flask default port. 3501 is Streamlit default port If you are running streamlit change Expose to 3501
-EXPOSE 5000
-
 # Define the command to run the application.
 # It runs the Python interpreter on app.py, which should be located in /app.
 CMD ["python", "./app.py"]
