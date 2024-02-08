@@ -18,7 +18,7 @@ static void create() {
     Scanner sc = new Scanner(System.in);
     System.out.print("Enter the number of nodes you want to create: ");
     int n = sc.nextInt();
-    for (int i = 1; i <= n; i++) {
+    for (int i = 0; i < n; i++) {
         System.out.print("Enter data for node " + i + ": ");
         Object data = sc.next();
         Node<Object> newNode = new Node<>(data);
