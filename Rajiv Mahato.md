@@ -1,4 +1,10 @@
-
+hello sir 
+your youtube channel is awesome 
+iam learn js and python 
+you are awesome sir and your contibution is best and i think my life change for your support thank you sir
+i think you are a best tech teacher 🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏🙏 thank you so much sir for your support 🙏🙏🙏🙏🙏
+iam from Nepal 
+please visit Nepal also nepal is awesome country 🙏🙏🙏
 
 
 
