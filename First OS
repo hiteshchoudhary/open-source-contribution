@@ -1,0 +1,93 @@
+# Java ButterFly Pattern Qs
+
+import java.util.*;
+public class Butterfly {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+
+        //  Top part
+
+        for(int i = 1;i<=n;i++)
+        {
+
+//         top left part
+
+            for(int j = 1;j<=i;j++)
+            {
+                System.out.print(" * ");
+            }
+
+//            top space part
+
+            for(int s = 1;s<=(n-i)*2;s++)
+            {
+                System.out.print("   ");
+            }
+
+//            top right part
+
+            for(int j=1;j<=i;j++)
+            {
+                System.out.print(" * ");
+            }
+            System.out.println("");
+        }
+
+//        for(int i = n;i>=1;i--)
+//        {
+//
+////         top left part
+//
+//            for(int j = 1;j<=i;j++)
+//            {
+//                System.out.print(" * ");
+//            }
+//
+////            top space part
+//
+//            for(int s = 1;s<=(n-i)*2;s++)
+//            {
+//                System.out.print("   ");
+//            }
+//
+////            top right part
+//
+//            for(int j=1;j<=i;j++)
+//            {
+//                System.out.print(" * ");
+//            }
+//            System.out.println("");
+//        }
+
+//        Top part end
+
+//        Bottom part
+
+        for (int i = 1;i<=n;i++)
+        {
+//            Bottom left part
+
+            for(int j = n; j>=i;j--)
+            {
+                System.out.print(" * ");
+            }
+
+//            Bottom Space part
+
+            for(int s = 1;s<=(i-1)*2;s++)
+            {
+                System.out.print("   ");
+            }
+
+//            Bottom Right part
+
+            for(int j = n; j>=i; j--)
+            {
+                System.out.print(" * ");
+            }
+            System.out.println("");
+        }
+//        Bottom part end
+    }
+}
