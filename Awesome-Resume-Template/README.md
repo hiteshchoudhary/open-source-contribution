@@ -1,5 +1,5 @@
-- Star it for later access. 
-- Fork or download the code.
+- Star it for quick access later. 
+- Fork to copy the code into your own profile.
 - [Choose a template](https://github.com/subidit/rover-resume).
 - Fill out your details.
 1. `\section` for Education, Experience, Certifications, Awards, Skills & Interests etc.
