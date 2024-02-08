@@ -3,7 +3,12 @@
   <img width="460" height="300" src="https://media1.tenor.com/m/YVvy33N0zqsAAAAd/arpit-bala-arpit.gif">
 </p>
 
+
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
+
+<p align="center">
+  <img width="460" height="300" src="https://tenor.com/en-GB/view/the-rock-gif-23501265">
+</p>
 
 
 
@@ -186,6 +191,11 @@ Again a heartful thaks a lot for providing such content
 3. **Cloud Technology**: SAP (Systems, Applications, and Products in Data Processing) services.
 4. **Entertainment**: Streaming platforms, online gaming.
 5. **Healthcare**: Electronic medical records systems, telemedicine platforms.
+
+
+
+
+
 
 ## Advantages
 
