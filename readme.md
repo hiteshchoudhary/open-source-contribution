@@ -3,6 +3,11 @@
   <img width="460" height="300" src="https://media1.tenor.com/m/YVvy33N0zqsAAAAd/arpit-bala-arpit.gif">
 </p>
 
+tere pass job hai 🫵
+<p align="center">
+  <img width="460" height="300" src="https://media1.tenor.com/m/-wkffRT0j0kAAAAC/shubham-the-shubham-kr.gif">
+</p>
+
 ### Big thanks to you sir for your Golang series. And sorry to disturb you about this pull request.
 
 
