@@ -1,3 +1,9 @@
+/**
+ * This assembly code implements a simple server that listens for incoming connections on port 8080.
+ * It uses the sys_socketcall syscall to create a socket, bind it to an address and port, and listen for incoming connections.
+ * When a connection is accepted, it reads data from the client, sends a response back, and closes the connection.
+ * The server continues to accept new connections in a loop until an error occurs or the program is terminated.
+ */
 section .data
     listen_sock     equ 3               ; File descriptor for listening socket
     conn_sock       equ 4               ; File descriptor for connection socket
