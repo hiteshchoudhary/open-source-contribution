@@ -16,7 +16,7 @@ The 100 Days of Brilliance Challenge is a simple challenge that anyone can take 
 To participate in the 100 Days of Brilliance Challenge, you need to follow these simple steps:
 - Fork this repository.
 - Clone the forked repository to your local machine.
-- Create a subfolder in the "100 Days of Brilliance Challenge" folder with your GitHub username.
+- Create a subfolder in the solution folder of "100 Days of Brilliance Challenge" folder with your GitHub username. Reference - [Solutions - 100 Days of Brilliancy Challenge](https://github.com/realpxd/open-source-contribution/blob/main/100%20Days%20of%20Brilliancy%20Challenge/Readme.md)
 - Solve the problem and push your solution to the subfolder you created.
 - Create a pull request to the main repository.
 
@@ -28,6 +28,12 @@ To participate in the 100 Days of Brilliance Challenge, you need to follow these
 - You can use any resources you want to solve the problem.
 - You can ask for help from others if you are stuck.
 - You can also help others if they are stuck.
+
+## DIIFICULTY LEVEL
+The problems will be of varying difficulty levels. Some problems will be easy, some will be medium, and some will be hard. The difficulty level of the problem will be mentioned in the problem statement.
+
+## REWARDS
+- Mr. Hitesh Choudhary will be giving a shoutout to the top 3 contributors of the challenge :smile:
 
 ## Folder Structure
 The repository is organized in the following way:
@@ -52,4 +58,4 @@ The repository is organized in the following way:
 - Don't change the content of the Problems.
 
 ## PROBLEMS
-- [Day 1]()
+- [Day 1](https://github.com/realpxd/open-source-contribution/blob/main/100%20Days%20of%20Brilliancy%20Challenge/Problems/Day1%20-%20star%20pattern%20(easy).md)

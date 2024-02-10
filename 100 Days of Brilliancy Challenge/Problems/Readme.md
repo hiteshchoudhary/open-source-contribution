@@ -6,4 +6,5 @@ The problems are organized in the following way:
 - [Problem]
   - [Date.md]
   - [Readme.md]
-where date.md is the Date.md & title of the problem.
+
+### where [Date.md] is the date & title of the problem.

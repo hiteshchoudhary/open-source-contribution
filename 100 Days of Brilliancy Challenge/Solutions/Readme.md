@@ -23,6 +23,7 @@ The solutions should be organized in the following way:
 # Date: 10-02-2024
 # Username: johndoe
 # Solution: solution.java
+# Your Code Here
 ```
 
 ## Parent Folder Structure
