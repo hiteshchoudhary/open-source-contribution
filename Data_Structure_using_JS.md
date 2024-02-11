@@ -2,6 +2,8 @@
 
 I was working on the DSA using js from long time, Here I am shareing the my repo links, If any one intersted to add more / Update you can contribute there as well.
 
+FYI:- I was working on the Snippets so the file structure are in txt formate,
+
 https://github.com/Ashutoshsarangi/JS_Code_2022
 
 NOTE:-
