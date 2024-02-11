@@ -31,12 +31,11 @@ The Fibonacci series should be printed exactly as mentioned in the problem state
 
 ## Tags
 - Loops
-- Basics
 - Fibonacci
-- Series
+- Basics
 
 ## Date
-10-02-2024
+11-02-2024
 
 ## Explanation
 Create a loop that runs from 0 to n and print the Fibonacci series for each iteration.
