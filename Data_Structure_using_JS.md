@@ -1,6 +1,6 @@
 # DSA Using Javascript
 
-I was working on the DSA using js from long time, Here I am shareing the my repo links, If any one intersted to add more / Update you can contribute there as well.
+I have been working on the DSA using js for a long time, Here I am sharing my repo links, If anyone is interested in adding more / Updating you can contribute there as well.
 
 FYI:- I was working on the Snippets so the file structure are in txt formate,
 
