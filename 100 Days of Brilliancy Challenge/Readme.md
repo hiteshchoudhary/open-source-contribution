@@ -60,3 +60,4 @@ The repository is organized in the following way:
 ## PROBLEMS
 - [Day 1](https://github.com/realpxd/open-source-contribution/blob/main/100%20Days%20of%20Brilliancy%20Challenge/Problems/Day1%20-%20star%20pattern%20(easy).md)
 - [Day 2](https://github.com/realpxd/open-source-contribution/blob/main/100%20Days%20of%20Brilliancy%20Challenge/Problems/Day2%20-%20fibonacci%20series%20(medium).md)
+- [Day 3](https://github.com/realpxd/open-source-contribution/blob/main/100%20Days%20of%20Brilliancy%20Challenge/Problems/Day2%20-%20my%20candies%20(easy).md)
