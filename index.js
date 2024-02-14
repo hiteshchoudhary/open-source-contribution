@@ -1,3 +1,3 @@
 console.log("LMAO");
 
-console.log("Read me edit karne ka tarika thoda kezual hai");
+console.log("Readme edit karne ka tarika thoda kezual hai");
