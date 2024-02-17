@@ -100,5 +100,5 @@ public class Main {
 - The input will be such that the number of dices will be less than or equal to 10^5.
 - The input will be such that the sum will be less than or equal to 10^5.
 
-## Creaed by 
+## Created by 
 - [Naman Saini / realpxd](https://github.com/realpxd)
