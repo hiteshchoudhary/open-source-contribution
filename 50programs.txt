@@ -1,0 +1,50 @@
+ 1) Print "Hello World"
+2) Taking input of a string and printing (Scanner)
+3) Printing 10 numbers (loop)
+4) Printing 10 numbers in reverse order (loop)
+5) Taking input of 10 numbers and printing (loop)
+6) Even Numbers (loop)
+7) Odd Numbers (loop)
+8) Sum of two Numbers
+9) Subtracting two numbers
+10) Factorial of a number
+11) Printing prime numbers
+12) Single array printing (loop)
+13) 2d array matrices (nested loop)
+14) Matrices addition (2d array, nested loop)
+15) Taking input and displaying day (switch case)
+16) Checking if the student is pass or fail (if else)
+17) Calculation income tax on entered salary (if else)
+18) Printing an array list (Java.Util.ArrayList)
+19) Manipulating an array list
+20) Performing operation on an array list
+21) Using Collection Library with array list
+22) Calculating Average of numbers
+23) Calculate Area of a Circle:
+24) Find Maximum Number in an Array
+25) Reverse an Array
+26) Find the Smallest among Three Numbers using if-else statements
+27) Check if a Character is a Vowel or a Consonant using if-else statements2
+28) Determine the Eligibility for Voting using if-else statements
+29) Find the Largest among Three Numbers using if-else statements
+30) Check if a Number is Positive, Negative, or Zero
+31) Setter and Getter Methods
+32) Encapsulation:
+33) Inheritance:
+34) Constructor:
+35) Abstract Class
+36) Interface
+37) Polymorphism
+38) Exception Handling - try-catch
+39) Exception Handling - multiple catch blocks
+40) Inheritance - Multi-level Inheritance
+41) Encapsulation - Private Fields and Public Methods
+42) Polymorphism - Method Overriding
+43) Abstract Class - Abstract Method
+44) Interface - Multiple Interface Implementation	
+45) Inheritance - Super Keyword
+46) Encapsulation - Readonly Fields
+47) Creating A class cellphone with different methods
+48)  Setting name and id of different employes with setter and getter
+49) Recursion in Java (Factorial)
+50) Guess the number GAME!
