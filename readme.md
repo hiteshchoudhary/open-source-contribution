@@ -1,3 +1,3 @@
-# repo refreshed
+# repo not refreshed
 
-Repo is refreshed.
+Repo is not refreshed.
