@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodePen Demo</title>
+</head>
+<body>
+    <button id="changeColorButton">Change Color</button>
+    <div id="content">This is some content!</div>
+
+    <script>
+        const button = document.getElementById("changeColorButton");
+        const content = document.getElementById("content");
+
+        button.addEventListener("click", () => {
+            content.style.backgroundColor = "lightblue";
+        });
+    </script>
+</body>
+</html>
