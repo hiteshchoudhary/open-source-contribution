@@ -1,0 +1,3 @@
+const multiply = (a, b) => a * b; 
+// => 60 
+console.log(multiply(2, 30)); 
