@@ -1,12 +1,12 @@
 # Execution Context <br/>
 
-## When the JavaScript engine executes the JavaScript code, it creates the global execution context. 
+When the JavaScript engine executes the JavaScript code, it creates the global execution context. 
     The global execution context has two phases:
             1. Creation
             2. Execution
 
 
-## When the JavaScript engine executes a script for the first time, it creates the global execution context. 
+When the JavaScript engine executes a script for the first time, it creates the global execution context. 
     During this phase, the JavaScript engine performs the following tasks:
 
         The Creation Phase: 
@@ -55,9 +55,7 @@
             execution where it left off.
 
             -- The script will stop when the call stack is empty.
-
-
+            
 ## Summery : 
-
             - JavaScript engine uses a call stack to manage execution contexts.
             - The call stack uses the stack data structure that works based on the LIFO (last-in-first-out) principle.
