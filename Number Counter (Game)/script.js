@@ -18,12 +18,10 @@ add.addEventListener('click', (e) => {
     function adding(num) {
         let addNum = num + 1;
         count = addNum;
-        console.log(addNum);
     }
 
     adding(count);
     counting.value = count;
-
 });
 
 //reducing the numbers feature
@@ -33,9 +31,9 @@ minus.addEventListener('click', () => {
     function minus(num) {
         let minusNum = num - 1;
         count = minusNum;
-        console.log(minusNum);
     }
 
     minus(count);
     counting.value = count;
-})
+    globalCount = counting.value;
+});
