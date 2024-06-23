@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #define maxsize 10
 
@@ -7,7 +6,6 @@ int stack[maxsize], top = -1;
 void push();
 void pop();
 void display();
-
 
 int main()
 {
@@ -20,8 +18,8 @@ int main()
         printf("Press 2 for pop\n");
         printf("Press 3 for display\n");
         printf("Press 4 for exit\n");
-        printf("enter your choice: ");
-        scanf("%d",&choice);
+        printf("Enter your choice: ");
+        scanf("%d", &choice);
         
         switch(choice)
         {
@@ -29,46 +27,52 @@ int main()
             case 2: pop(); break;
             case 3: display(); break;
             case 4: break;
-            default: printf("Invalid choice");
+            default: printf("Invalid choice\n");
         }
-    }while(choice!=4);
+    } while(choice != 4);
+    
+    return 0; // Ensure the program terminates properly
 }
 
 void push()
 {
-    if(top == maxsize - 1 )
+    if(top == maxsize - 1)
     {
-        printf("stack is overflow");
+        printf("Stack is overflow\n");
     }
     else
     {
-        printf("enter value:");
+        printf("Enter value: ");
         top++;
-        scanf("%d",&stack[top]);
+        scanf("%d", &stack[top]);
     }
 }
+
 void pop()
 {
-    if(top == -1){
-        printf("stack is empty");
+    if(top == -1)
+    {
+        printf("Stack is empty\n");
     }
     else
     {
-        printf("deleted item %d",stack[top]);
+        printf("Deleted item %d\n", stack[top]);
         top--;
     }
 }
+
 void display()
 {
-    if (top == -1)
+    if(top == -1)
     {
-        printf("stack is empty");
+        printf("Stack is empty\n");
     }
     else
     {
-        for(int i =0; i<=top; i++)
+        for(int i = 0; i <= top; i++)
         {
-            printf("%d\t",stack[i]);
+            printf("%d\t", stack[i]);
         }
+        printf("\n");
     }
 }
