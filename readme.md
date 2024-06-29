@@ -1,3 +1,6 @@
-# repo refreshed
+# Rules of Open Sorce Contribution
 
-Repo is refreshed.
+## Talk first
+## Create real Value
+## describe your changes
+## write tests
