@@ -1,1 +1,1 @@
-console.log("i am dev and lerning how to get PR. ")
+console.log("i am dev and lerning how to get PR and git")
