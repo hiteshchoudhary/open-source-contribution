@@ -7,4 +7,4 @@ console.log("LMAO")
 // console.log(arr[1]);
 
 const arr = ['kumar', 'hitesh']
-console.log(arr[1]); indexedDB.
+console.log(arr[1]); 
