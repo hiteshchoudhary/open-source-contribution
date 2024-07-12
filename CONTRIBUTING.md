@@ -30,19 +30,23 @@ Thank you for your interest in contributing to our project! Whether you're fixin
 
 
 **Code style**
+
 Follow the existing code style and conventions.
 Ensure your code adheres to best practices and is well-documented.
 
 
 **Code of Conduct**
+
 This project adheres to our Code of Conduct. Please ensure all interactions follow the guidelines.
 
 
 **License**
+
 By contributing, you agree that your contributions will be licensed under the MIT License.
 
 
 **Need Help?**
+
 If you have any questions or need further assistance, feel free to reach out via email or create an issue in the repository.
 
 
