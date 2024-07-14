@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: orange;
+            display: flex;
+            justify-content: space-between;
+            padding: 28px;
+            color: white;
+            font-size: 20px;
+        }
+
+        .link-wrapper1 {
+            width: 400px;
+            margin-left: 20px;
+        }
+
+        .link-wrapper1 li {
+            display: inline;
+            margin-right: 20px;
+            list-style: none;
+        }
+
+        .link-wrapper2{
+            margin-right: 32px;
+        }
+
+        .link-wrapper2 li {
+            list-style: none;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: rgba(254, 252, 233, 0.7);
+        }
+
+        header ul li a:hover {
+            opacity: 1;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="link-wrapper1">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="link-wrapper2">
+            <ul>
+                <li><a href="#">Join Us</a></li>
+            </ul>
+        </div>
+    </header>
+</body>
+</html>
