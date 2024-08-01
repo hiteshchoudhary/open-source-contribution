@@ -1,1 +1,1 @@
-console.log("LMAO")
+console.log("Asslam o Alaikum")
