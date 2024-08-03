@@ -1,7 +1,7 @@
 # Another readme is here
 
-This is My First OpenSource Contribution.
+Thank you Hitesh Sir for this Amazing Tutorial of Git and Git Hub.
 
 ## Write your name here
 
-Ashish Kumar
+Ujjwal Bhadani
