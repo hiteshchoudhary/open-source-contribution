@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hybrid Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #2e2e2e, #1e1e1e);
+            color: #fff;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: #0ff;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.6);
+        }
+
+        button {
+            background: transparent;
+            border: 2px solid #0ff;
+            color: #0ff;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            outline: none;
+            position: relative;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(0, 255, 255, 0.5);
+            transition: 0.3s;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+
+        button:hover::before {
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 255, 255, 0.8);
+        }
+
+        button:hover {
+            color: #000;
+            background: #0ff;
+        }
+
+        button span {
+            position: relative;
+            z-index: 1;
+        }
+
+        .neon {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0, 255, 255, 0.3), rgba(0, 0, 0, 0.8));
+            animation: neonGlow 1.5s infinite alternate;
+        }
+
+        @keyframes neonGlow {
+            from {
+                filter: brightness(1.2);
+            }
+            to {
+                filter: brightness(1.5);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="neon"></div>
+        <div>
+            <h1>Neon Effect Page</h1>
+            <button onclick="handleClick()"><span>Click Me</span></button>
+        </div>
+    </div>
+
+    <script>
+        function handleClick() {
+            alert('Button Clicked!');
+        }
+    </script>
+</body>
+</html>
