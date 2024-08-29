@@ -1,5 +1,10 @@
-let sum=0;
-for(let i=1;i<=10;i++){
-    sum+=i;
+const object={
+    username:"username",
+    email:"email",
+    password:"password",
+    contactNumber:"contactNumber"
 }
-console.log("sum of 1 to 10 is "+sum)
+
+console.log(object)
+delete object.password
+console.log(object)
