@@ -1,7 +1,7 @@
 # Another readme is here
 
+Hey there! This Akkya.
 This is My First OpenSource Contribution.
 
-## Write your name here
+Trying to be better.
 
-Ashish Kumar

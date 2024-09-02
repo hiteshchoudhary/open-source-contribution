@@ -1,3 +1,3 @@
-# repo refreshed
+# Adding some file like Readme file
 
-Repo is refreshed.
+Trying my first contribution on Github and Open-source.
