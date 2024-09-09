@@ -1,0 +1,1 @@
+# This directory contains some python modules with some intermediate concepts to explore for python aficionados. Happy Learning!
