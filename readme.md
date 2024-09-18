@@ -1,3 +1,3 @@
-# repo refreshed
+# Write review of course below
 
-Repo is refreshed.
+Epic course enjoyed alot, learned alot. ~ Karan Singh
