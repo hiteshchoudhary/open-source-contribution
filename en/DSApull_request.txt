@@ -1,0 +1,66 @@
+This is a file to try a pull request.
+
+However, to make it valuable, here's a list of questions on Leetcode you must do atleast to get started with DSA :
+1. Arrays and Strings:
+    Longest Substring Without Repeating Characters
+    Rotate Image
+    Merge Intervals
+    Product of Array Except Self
+    Search a 2D Matrix II
+    Find the Duplicate Number
+2. Linked Lists:
+    Add Two Numbers
+    Remove Nth Node From End of List
+    Copy List with Random Pointer
+    Reorder List
+    Linked List Cycle II
+3. Binary Trees:
+    Binary Tree Level Order Traversal
+    Binary Tree Zigzag Level Order Traversal
+    Construct Binary Tree from Preorder and Inorder Traversal
+    Lowest Common Ancestor of a Binary Tree
+    Flatten Binary Tree to Linked List
+4. Binary Search Trees:
+    Validate Binary Search Tree
+    Kth Smallest Element in a BST
+    Insert into a Binary Search Tree
+    Delete Node in a BST
+5. Dynamic Programming (DP):
+    Longest Palindromic Substring
+    Jump Game
+    Longest Increasing Subsequence
+    Coin Change
+    Palindromic Substrings
+6. Graphs:
+    Course Schedule
+    Number of Islands
+    Clone Graph
+    Course Schedule II
+    Network Delay Time
+7. Backtracking:
+    Combination Sum
+    Permutations
+    Word Search
+    Palindrome Partitioning
+8. Greedy Algorithms:
+    Jump Game
+    Non-overlapping Intervals
+    Partition Labels
+    Minimum Number of Arrows to Burst Balloons
+9. Sliding Window/Two Pointers:
+    Longest Substring Without Repeating Characters
+    Permutation in String
+    Find All Anagrams in a String
+    Minimum Size Subarray Sum
+10. Heaps:
+    Kth Largest Element in an Array
+    Kth Smallest Element in a Sorted Matrix
+    Top K Frequent Words
+    Top K Frequent Elements
+11. Bit Manipulation:
+    Number of 1 Bits
+    Counting Bits
+    Sum of Two Integers
+
+This list should give you a comprehensive grasp of essential DSA concepts and prepare you well for coding interviews.
+DISCLAIMER : MAY NOT BE COMPLETELY ACCURATE.
