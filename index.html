@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit and Remove Element in DOM </title>
+</head>
+<body style="background-color: #212121;color:white">
+
+<ul class="language">
+    <li>JavaScript</li>
+</ul>
+
+</body>
+
+
+<script>
+    // Adding new list with help of DOM and function.
+
+    function addLanguage(langName){
+        const ul=document.querySelector('.language');
+        const list=document.createElement('li');
+        list.innerHTML=`${langName}`;
+        ul.appendChild(list);
+    }
+
+    // addLanguage("python");
+    // addLanguage("C++");
+
+    // *************** Optimized Method to add new list using TextNode.  ****************
+
+    function OptimizedMethod(langName)
+    {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(langName));  // here it will take less time as compared to the above method.
+        document.querySelector('.language').appendChild(li)
+    }
+
+    OptimizedMethod('Ruby')
+    OptimizedMethod('TypeScript')
+    OptimizedMethod('Java')
+    OptimizedMethod('C#')
+
+    // Edit Element using replaceWith
+
+    function newEle(newLang){
+
+        const repEle=document.querySelector("li:nth-child(2)");  //selecting the 2nd element of the list
+        const newEle=document.createElement("li");
+        newEle.textContent=`${newLang}`
+        repEle.replaceWith(newEle);    //replaceWithMethod
+    }
+    newEle(".NET")
+
+    //Remove
+    const last=document.querySelector('li:last-child');  // accessing the last element of list
+    last.remove()
+
+
+
+
+</script>
+</html>
