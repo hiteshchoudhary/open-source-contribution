@@ -1,1 +1,2 @@
-console.log("LMAO")
+const lmao = 'LMAO';
+console.log(lmao);
