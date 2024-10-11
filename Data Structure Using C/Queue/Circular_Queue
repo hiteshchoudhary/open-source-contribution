@@ -1,0 +1,88 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class circular_qu                   //  decleare the circular queue
+{
+    public:
+    int n=2,a[2],front=-1,rear=-1;
+    //   circular_qu(int n)                    //  calling the constructure in the queue
+    //   {
+    //     this->n=n;
+    //   }
+
+     void enqueue()                                       //   it is for the enqueue element in the circular queue
+     {
+        if((rear+1)%n==front)
+        {
+            cout<<"Circular Queue is Full"<<endl;
+        }
+        else{
+        int value;
+        cout<<"Enter the value::";
+        cin>>value;
+            if(front==-1)
+            {
+                  front=0;
+            }
+            rear=(rear+1)%n;                              //  it is for the push the element in the circuler queue
+            a[rear]=value;
+            cout<<"rear="<<rear<<endl;
+        }
+     }
+
+     void dequeue()                                   //  it is for the dequeue element form the circular queue
+     {
+          if(front==-1)
+          {
+            cout<<"Front=-1"<<endl;
+          }
+          else{
+            int result=a[front];
+            cout<<"value="<<result<<endl;
+            if(front==rear)
+            {
+                cout<<"Circular Queue is Empty"<<endl;
+            }
+            else{
+                front=(front+1)%n;
+            }
+          }
+     }
+
+};                           
+
+
+int main()
+{
+    // cout<<"Enter the Number of Element in the Circular Queue::";
+    // int n;                         //number of element in the circular queue
+    // cin>>n;
+    // int a[n];                     //  it is circular queue
+    circular_qu cq;
+    while(1)
+    {
+        cout<<"Enter 1 for Enqueue"<<endl;
+        cout<<"Enter 2 for Dequeue"<<endl;
+        cout<<"Enter 3 for exit "<<endl;
+        int t;
+        cin>>t;
+        switch(t)
+        {
+            case 1:
+            {
+                cq.enqueue();
+                break;
+            }
+            case 2:
+            {
+                cq.dequeue();
+                break;
+            }
+            case 3:
+            {
+                exit(0);
+            }
+        }
+    }
+    cout<<"Exit Succesfully"<<endl;
+}
