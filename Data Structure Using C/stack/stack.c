@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #define maxsize 10
 
@@ -8,10 +7,10 @@ void push();
 void pop();
 void display();
 
-
 int main()
 {
     int choice;
+    int Exit = 4;
     
     do
     {
@@ -25,13 +24,21 @@ int main()
         
         switch(choice)
         {
-            case 1: push(); break;
-            case 2: pop(); break;
-            case 3: display(); break;
-            case 4: break;
+            case 1: push();
+                    break;
+                    
+            case 2: pop(); 
+                    break;
+
+            case 3: display(); 
+                    break;
+
+            case 4: printf("Exit.......");
+                    break;
+
             default: printf("Invalid choice");
         }
-    }while(choice!=4);
+    }while(choice!=Exit);
 }
 
 void push()
