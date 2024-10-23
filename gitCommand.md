@@ -1,3 +1,11 @@
+- fork the github repository of someone by clicking on fork 
+- git clone https://github.com/example.git
+- makes changes or add feature or resolve bugs
+- git checkout your-branch-name [if not exists create and switch to it]
+- git add .
+- git commit -m "any commit"
+- git remote -v
+- git push origin your-branch-name
 ```github
 git --version
 pwd [present working directory (path)]
@@ -90,3 +98,4 @@ git ls-tree <tree-id> [0fb3b65c62e0e42a6aa4f71ec3f9cc0bb29a2a0c]
 git show <blob-id> [100644]
 
 ```
+
