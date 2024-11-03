@@ -1,6 +1,6 @@
 
 #include <stdio.h>
-#define maxsize 10
+#define maxsize 10 //MACRO
 
 int stack[maxsize], top = -1;
 
@@ -43,8 +43,7 @@ void push()
     else
     {
         printf("enter value:");
-        top++;
-        scanf("%d",&stack[top]);
+        scanf("%d",&stack[++top]);
     }
 }
 void pop()
@@ -54,8 +53,7 @@ void pop()
     }
     else
     {
-        printf("deleted item %d",stack[top]);
-        top--;
+        printf("deleted item %d",stack[top--]);
     }
 }
 void display()
