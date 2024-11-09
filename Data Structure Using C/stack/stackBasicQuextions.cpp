@@ -295,7 +295,7 @@ int main()
     // insertInSortedStack(st,ele);
     // printStack(st);
 
-    // // Q4 Implement two stack in one array
+    // // Q5 Implement two stack in one array
     // ArrayStack* st = new ArrayStack(5);
     // st->push1(10);
     // st->push1(20);
@@ -306,7 +306,7 @@ int main()
     // st->pop1();
     // st->pop1();
 
-    // Q4 Redundant Parenthesis
+    // Q6 Redundant Parenthesis
 
     // string eq = "((A+(B+C)))";
     // if (isRedundant(eq))
@@ -319,9 +319,9 @@ int main()
     // }
 
     vector<int> arr = {5, 6, 2, 3, 1, 7};
-    //Q5 Next smaller element
+    //Q7 Next smaller element
     // findNextMin(arr);
-    //Q6 Previous Smaller element 
+    //Q8 Previous Smaller element 
     findPrevMin(arr);
 
     for(int ele:arr){
