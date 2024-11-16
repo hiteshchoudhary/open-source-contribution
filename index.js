@@ -1,1 +1,2 @@
-console.log("LMAO")
+console.log("LMAO");
+alert("important message");
