@@ -1,3 +1,2 @@
-# repo refreshed
-
-Repo is refreshed.
+#LearningGit
+Thank you for Teaching Git. You are Best.
