@@ -28,6 +28,9 @@ int main()
             case 1: push(); break;
             case 2: pop(); break;
             case 3: display(); break;
+            case 4 : if(!st.empty()){
+                st.pop();
+            }
             case 4: break;
             default: printf("Invalid choice");
         }
