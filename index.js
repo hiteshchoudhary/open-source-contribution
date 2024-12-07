@@ -3,7 +3,7 @@ console.log("LMAO")
 
 
 
-//This code is useful for making Quiz App
+//This code is useful for making Quiz App from mushtaq
 document.addEventListener('DOMContentLoaded',function(){
 
     const startBtn = document.getElementById("start-btn");
