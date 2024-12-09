@@ -1,0 +1,15 @@
+body {
+  background-color: aliceblue;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+p {
+  background-color: antiquewhite;
+  padding: 30px;
+  border: 1px solid black;
+}
