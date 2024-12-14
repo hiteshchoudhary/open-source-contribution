@@ -1,3 +1,3 @@
-# repo refreshed
-
-Repo is refreshed.
+# this is for git learning'
+## do changes 
+### enjoy it !
