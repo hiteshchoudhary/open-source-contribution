@@ -1,3 +1,3 @@
-# repo refreshed
+# Learing about Fork and PR
 
-Repo is refreshed.
+Thank you Hitesh sir for amazing video.
