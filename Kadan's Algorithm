@@ -1,0 +1,47 @@
+Kadan's algorithm used to find maximum subarray sum
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+    // Brute force approach
+    
+    // int n = 6;
+    // int arr[] = {-2,1,-3,4,-1,2};
+
+    // int maxSum = INT32_MIN;
+
+    // for (int  st = 0; st< n; st++)
+    // {
+    //     int currentSum = 0;
+    //     for(int end = st; end<n; end++){
+    //         currentSum += arr[end];
+    //         maxSum = max(maxSum, currentSum);
+    //     }
+    // }
+    
+    // cout<<"Max sum is: "<<maxSum<<endl;
+
+
+    // Kadane's Algorithm
+    int n=6; 
+    int arr[] = {-2,1,-3,4,-1,2};
+
+    int maxSum = INT32_MIN;
+    int currentSum = 0;
+
+    for(int i=0; i<n; i++){
+        currentSum += arr[i];
+        maxSum = max(maxSum, currentSum);
+
+        if(currentSum<0){
+            currentSum = 0;
+        }
+
+    }
+        cout<<"maxSum is "<<maxSum<<endl;
+
+    return 0;
+}
