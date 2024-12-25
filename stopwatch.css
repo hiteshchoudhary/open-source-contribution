@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background: linear-gradient(to right, rgb(0, 0, 0),rgb(218, 2, 247));
+}
+.header img{
+    width: 100px;
+    margin-top: 20px;
+}
+.stopwatch{
+    width: 90%;
+    max-width: 600px;
+    background: url(pxfuel.jpg);
+    background-position: center;
+    text-align: center;
+    padding: 40px 40px;
+    color: #ffffff;
+    margin: 20px auto 0;
+    border-radius: 00px 50px 00px 50px;
+    box-shadow: 10px 10px 10px rgb(0, 53, 226);
+
+}
+.stopwatch h1{
+    margin-top: 60px;
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.buttons{
+    
+    align-items: center;
+    justify-content: center;
+    
+    border: none;
+    padding: 25px;
+    
+    margin: 25px;
+}
+
+.buttons button:hover{
+    cursor: pointer;
+    background-color: rgb(96, 151, 233);
+   
+}
+
+
+
+
