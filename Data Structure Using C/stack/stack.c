@@ -1,74 +1,109 @@
 
 #include <stdio.h>
-#define maxsize 10
+#define MAXSIZE 10
 
-int stack[maxsize], top = -1;
+int stack[MAXSIZE], top = -1;
 
+// Function prototypes
 void push();
 void pop();
 void display();
-
+void showMenu();
 
 int main()
 {
     int choice;
-    
+
     do
     {
-        printf("\n----stack----\n");
-        printf("Press 1 for push\n");
-        printf("Press 2 for pop\n");
-        printf("Press 3 for display\n");
-        printf("Press 4 for exit\n");
-        printf("enter your choice: ");
-        scanf("%d",&choice);
-        
-        switch(choice)
+        showMenu();
+        printf("Enter your choice: ");
+        if (scanf("%d", &choice) != 1)
         {
-            case 1: push(); break;
-            case 2: pop(); break;
-            case 3: display(); break;
-            case 4: break;
-            default: printf("Invalid choice");
+            printf("Invalid input! Please enter a valid number.\n");
+            while (getchar() != '\n')
+                ; // Clear input buffer
+            continue;
         }
-    }while(choice!=4);
+
+        switch (choice)
+        {
+        case 1:
+            push();
+            break;
+        case 2:
+            pop();
+            break;
+        case 3:
+            display();
+            break;
+        case 4:
+            printf("Exiting the program.\n");
+            break;
+        default:
+            printf("Invalid choice! Please try again.\n");
+        }
+    } while (choice != 4);
+
+    return 0;
+}
+
+void showMenu()
+{
+    printf("\n---- STACK MENU ----\n");
+    printf("1. Push\n");
+    printf("2. Pop\n");
+    printf("3. Display\n");
+    printf("4. Exit\n");
 }
 
 void push()
 {
-    if(top == maxsize - 1 )
+    if (top == MAXSIZE - 1)
     {
-        printf("stack is overflow");
+        printf("Stack Overflow! Cannot add more elements.\n");
     }
     else
     {
-        printf("enter value:");
-        top++;
-        scanf("%d",&stack[top]);
+        int value;
+        printf("Enter value to push: ");
+        if (scanf("%d", &value) != 1)
+        {
+            printf("Invalid input! Please enter a number.\n");
+            while (getchar() != '\n')
+                ; // Clear input buffer
+            return;
+        }
+        stack[++top] = value;
+        printf("%d pushed onto the stack.\n", value);
     }
 }
+
 void pop()
 {
-    if(top == -1){
-        printf("stack is empty");
+    if (top == -1)
+    {
+        printf("Stack Underflow! No elements to pop.\n");
     }
     else
     {
-        printf("deleted item %d",stack[top]);
-        top--;
+        printf("Popped element: %d\n", stack[top--]);
     }
 }
+
 void display()
 {
     if (top == -1)
     {
-        printf("stack is empty");
+        printf("Stack is empty.\n");
     }
     else
     {
-        for(int i =0; i<=top; i++)
+        printf("Stack contents (top to bottom): ");
+        for (int i = top; i >= 0; i--)
         {
-            printf("%d\t",stack[i]);
+            printf("%d ", stack[i]);
         }
+        printf("\n");
     }
 }
