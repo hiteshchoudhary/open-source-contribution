@@ -1,5 +1,5 @@
 
-#include <stdio.h>
+// #include <stdio.h>
 #define maxsize 10
 
 int stack[maxsize], top = -1;
@@ -31,7 +31,7 @@ int main()
             case 4: break;
             default: printf("Invalid choice");
         }
-    }while(choice!=4);
+    }while(choice != 4);
 }
 
 void push()
@@ -66,7 +66,7 @@ void display()
     }
     else
     {
-        for(int i =0; i<=top; i++)
+        for(int i = 0; i <= top; i++)
         {
             printf("%d\t",stack[i]);
         }
