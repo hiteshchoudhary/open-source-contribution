@@ -72,3 +72,11 @@ void display()
         }
     }
 }
+
+void myMessage()
+{
+    printf("Hello, I am the Kodemapper!");
+}
+
+void myMessage();
+
