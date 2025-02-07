@@ -62,7 +62,7 @@ void display()
 {
     if (top == -1)
     {
-        printf("stack is empty");
+        printf("stack is empty.");
     }
     else
     {
