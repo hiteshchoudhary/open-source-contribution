@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git and GitHub Basics</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .code-block {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Understanding Git and GitHub</h1>
+    <p>Git is a version control system that allows you to track changes in your code over time, while GitHub is a platform that hosts your Git repositories online, enabling collaboration with others.</p>
+
+    <h2>Key Git Concepts</h2>
+    <ul>
+        <li><strong>Repository:</strong> A project folder containing all your code files and their version history.</li>
+        <li><strong>Working Directory:</strong> The current set of files you are actively editing on your local machine.</li>
+        <li><strong>Staging Area:</strong> A temporary holding area where you mark files to be included in your next commit.</li>
+        <li><strong>Commit:</strong> A snapshot of your project at a specific point in time, with a descriptive message.</li>
+        <li><strong>Branch:</strong> A parallel line of development, allowing you to work on different features without affecting the main codebase.</li>
+    </ul>
+
+    <h2>Basic Git Commands</h2>
+    <p><strong>Initializing a Git Repository:</strong></p>
+    <div class="code-block">
+        <code>git init</code>
+    </div>
+
+    <p><strong>Adding Files to Staging Area:</strong></p>
+    <div class="code-block">
+        <code>git add <filename></code>
+    </div>
+
+    <p><strong>Committing Changes:</strong></p>
+    <div class="code-block">
+        <code>git commit -m "Commit message"</code>
+    </div>
+
+    <h2>Using GitHub</h2>
+    <p><strong>Creating a Repository on GitHub:</strong></p>
+    <ol>
+        <li>Go to GitHub and create a new repository.</li>
+        <li>Copy the repository URL.</li>
+    </ol>
+
+    <p><strong>Connecting Local Repository to GitHub:</strong></p>
+    <div class="code-block">
+        <code>git remote add origin <repository-url></code>
+    </div>
+
+    <p><strong>Pushing Changes to GitHub:</strong></p>
+    <div class="code-block">
+        <code>git push -u origin master</code>
+    </div>
+
+    <h2>Further Exploration</h2>
+    <ul>
+        <li>Learn about branching and merging.</li>
+        <li>Explore Git commands for managing conflicts.</li>
+        <li>Practice using GitHub features like Pull Requests.</li>
+    </ul>
+
+</body>
+</html>
