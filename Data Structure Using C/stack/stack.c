@@ -38,7 +38,7 @@ void push()
 {
     if(top == maxsize - 1 )
     {
-        printf("stack is overflow");
+        printf("stack is full and can't be inserted more!");
     }
     else
     {
@@ -54,7 +54,7 @@ void pop()
     }
     else
     {
-        printf("deleted item %d",stack[top]);
+        printf("deleted item  is %d",stack[top]);
         top--;
     }
 }
