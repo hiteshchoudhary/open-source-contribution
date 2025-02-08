@@ -1,0 +1,18 @@
+*{
+    background-color: rgb(26, 26, 54);
+    color : white
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+table{
+    border-collapse: collapse;
+    width: 90%;
+    border : 2px solid white;
+    font-size: 2rem;
+}
+table   tr, td, th{
+    border : 2px solid white;
+    padding: 10px;
+}
