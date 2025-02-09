@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API request With XML-HTTP-REQUESTS </title>
+</head>
+<body style="background-color: #000; color: #fff;">
+    <div class="container" style="border: 1px dotted wheat;">
+        <h2 style = "font-Size:2rem; text-align: center; background: linear-gradient(#ea1818, #b95226); height: 4rem; align-items: center; display: flex; justify-content: center;"  class="card-heading">
+                 Github card use Github API
+        </h2>
+
+        <div class="image" style="display: flex; justify-content: center; align-items: center;
+        gap: 1.6rem; flex-wrap: wrap;">
+            <img src="https://avatars.githubusercontent.com/u/11613311?v=4"
+             alt="user-image" id="img" style="width: 200px; border-radius: 50%;">
+             <p class="userName" style="font-size: 1.4rem;"></p>
+        </div>
+
+        <div class="card-data" style="display: flex; justify-content: center; align-items: center;flex-wrap: wrap; border: 1px dotted rgb(156, 156, 170);">
+        <div class="followers" style="padding: 1rem; text-align: center;">
+            <p  style="font-size: 1.4rem; color: orangered;">followers</p>
+            <p id="github-followers"></p>
+        </div>
+
+        <div class="following" style="padding: 1rem;text-align: center;" >
+            <p  style="font-size: 1.4rem;">following</p>
+            <p id="github-following"></p>
+        </div>
+
+        <div class="Repose" style="padding: 1rem; text-align: center;">
+            <p style="font-size: 1.4rem; color: orangered;">Repository </p>
+            <p id="github-Repository"></p>
+        </div>
+    </div>
+        
+    </div>
+    
+</body>
+   <script>
+
+     const requestURL = 'https://api.github.com/users/hiteshchoudhary';
+     const xhr  =  new XMLHttpRequest();
+     // get request send
+     xhr.open("GET" , requestURL);
+     xhr.onreadystatechange =  function(){ 
+        console.log(xhr.readyState); 
+   
+        if(xhr.readyState === 4){
+        let data = JSON.parse(this.responseText);  // (this) current context.
+        console.log(typeof data) 
+    
+        const followersData = document.getElementById("github-followers")
+        followersData.innerText = data.followers;
+
+        const followingData = document.getElementById("github-following")
+        followingData.innerText = data.following;
+
+        const RepositoryData = document.getElementById("github-Repository")
+         RepositoryData.innerText = data.public_repos;
+
+        const UserNamee = document.querySelector(".userName");
+         UserNamee.innerText = data.name;
+
+     }
+    }
+     xhr.send()          
+   </script>
+</html>
