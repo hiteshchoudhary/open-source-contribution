@@ -1,0 +1,17 @@
+{
+  "name": "1.0.0",
+  "version": "1.0.0",
+  "description": "This is simple calculator ",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "keywords": [
+    "cal"
+  ],
+  "author": "rushi",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
