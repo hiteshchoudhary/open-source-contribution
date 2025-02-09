@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#dc143c;
+    --secondary-color:#f0f8ff;
+}
+
+header nav {
+    padding: 30px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 31px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+ span{
+    color: #000000;
+ }
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+nav ul li a:hover {
+    color: rgba(22, 3, 3, 0.769);
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 16px;
+    border-style: none;
+}
+
+
+
+#search-input {
+    padding-right: 18px;
+    background-image: url(https://static-00.iconduck.com/assets.00/search-icon-2048x2048-cmujl7en.png);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px 17px;
+}
