@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+        }
+        h1{
+            text-align: center;
+            font-size: 7vw;
+        }
+        span{
+            display: inline-block;
+            scale: 0;
+            transition: all 500ms;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+       <span class="span" id="a">H</span class="span"> 
+       <span class="span" id="a">e</span class="span"> 
+       <span class="span" id="a">l</span class="span"> 
+       <span class="span" id="a">l</span class="span"> 
+       <span class="span" id="a">o</span class="span"> 
+       <span class="span" id="a">,</span class="span"> 
+       <span class="span" id="a"> </span class="span"> 
+       <span class="span" id="a">H</span class="span"> 
+       <span class="span" id="b">i</span class="span"> 
+       <span class="span" id="c">t</span class="span"> 
+       <span class="span" id="d">e</span class="span"> 
+       <span class="span" id="e">s</span class="span"> 
+       <span class="span" id="f">h</span class="span"> 
+       <span class="span" id="f"> </span class="span"> 
+       <span class="span" id="f">s</span class="span"> 
+       <span class="span" id="f">i</span class="span"> 
+       <span class="span" id="f">r</span class="span"> 
+    </h1>
+    <script>
+        debugger
+        const letters = document.querySelectorAll('span');
+        let time = 300;
+        for(let i = 0; i < letters.length; i++){
+            setTimeout(() => {
+                letters[i].style.scale = "1.5";
+            }, time);
+            time+=200;
+        }
+    </script>
+</body>
+</html>
