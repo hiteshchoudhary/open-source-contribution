@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-gray-100">
+    <div class="max-w-5xl mx-auto space-y-12 pt-16">
+        <section class="text-center flex flex-col items-center gap-3">
+            <div class="relative inline-block float">
+                <img src="/img/Profile.jpg" alt="tony stark"
+                    class="w-48 h-48 rounded-full border-4 border-gold-400 mb-8 transition-all duration-300  hover:border-8">
+                <div
+                    class="absolute -bottom-2 -right-2 bg-white text-black px-4 py-1 rounded-full text-sm font-semibold transform  hover:scale-110  hover:bg-green-500 transition-transform duration-300">
+                    B.Tech CS
+                </div>
+            </div>
+            <h1
+                class="text-4xl sm:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-600">
+                tony stark</h1>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Aspiring developer with a passion for creating innovative solutions and continuous learning.
+            </p>
+        </section>
+
+        <section class="space-y-6">
+            <h2 class="text-3xl font-bold mb-4 text-center font-mySecondFont">About Me</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div
+                    class="bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-6  hover:shadow-lg  hover:shadow-blue-500/10">
+                    <h3 class="text-xl font-semibold mb-2">Background</h3>
+                    <p class="text-gray-300">
+                        Currently pursuing my B.Tech. in computer science, I've developed a strong foundation in various
+                        programming languages and web technologies since my school days.
+                    </p>
+                </div>
+                <div
+                    class="bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-6  hover:shadow-lg  hover:shadow-blue-500/10">
+                    <h3 class="text-xl font-semibold mb-2">Projects</h3>
+                    <p class="text-gray-300">
+                        My portfolio includes clones of popular platforms like Netflix and Spotify, as well as personal
+                        projects such as a social media app design and Jasvis, a Python-based application.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <h2 class="text-3xl font-bold mb-4 text-center">Skills</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">80%</span>
+                    </div>
+                    <span class="text-sm font-medium">C</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">60%</span>
+                    </div>
+                    <span class="text-sm font-medium">Python</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">60%</span>
+                    </div>
+                    <span class="text-sm font-medium">C++</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">80%</span>
+                    </div>
+                    <span class="text-sm font-medium">HTML</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">90%</span>
+                    </div>
+                    <span class="text-sm font-medium">CSS</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">85%</span>
+                    </div>
+                    <span class="text-sm font-medium">Javascript</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">80%</span>
+                    </div>
+                    <span class="text-sm font-medium">React js</span>
+                </div>
+
+                <div
+                    class="skill-card bg-gray-800 border-gray-700  hover:bg-gray-750 transition-all duration-300 rounded-lg p-4 flex flex-col items-center">
+                    <div class="w-16 h-16 mb-2 relative skill-circle transition-transform duration-300">
+                        <svg class="w-full h-full transform -rotate-90">
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                class="text-gray-700"></circle>
+                            <circle cx="32" cy="32" r="28" stroke="currentColor" stroke-width="8" fill="transparent"
+                                stroke-dasharray="175.92" stroke-dashoffset="35.184"
+                                class="text-blue-400 transition-all duration-1000 ease-in-out"></circle>
+                        </svg>
+                        <span class="absolute inset-0 flex items-center justify-center text-lg font-semibold">75%</span>
+                    </div>
+                    <span class="text-sm font-medium">Mongo DB</span>
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <h2 class="text-3xl font-bold mb-4 text-center">What I'm Doing</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div
+                    class="activity-card bg-gray-800 border-gray-700 overflow-hidden group  hover:shadow-lg  hover:shadow-blue-600/10 transition-all duration-300 rounded-lg p-6">
+                    <i data-lucide="palette"
+                        class="w-12 h-12 mb-4 text-blue-400 group -hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-semibold mb-2">Web Design</h3>
+                    <p class="text-gray-400">Creating modern and high-quality designs at a professional level</p>
+                </div>
+
+                <div
+                    class="activity-card bg-gray-800 border-gray-700 overflow-hidden group  hover:shadow-lg  hover:shadow-blue-600/10  transition-all duration-300 rounded-lg p-6">
+                    <i data-lucide="tv"
+                        class="w-12 h-12 mb-4 text-blue-400 group -hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+                    <p class="text-gray-400">Delivering high-quality website development at a professional standard.</p>
+                </div>
+
+                <div
+                    class="activity-card bg-gray-800 border-gray-700 overflow-hidden group  hover:shadow-lg  hover:shadow-blue-600/10  transition-all duration-300 rounded-lg p-6">
+                    <i data-lucide="smartphone"
+                        class="w-12 h-12 mb-4 text-blue-400 group -hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-semibold mb-2">Mobile Apps</h3>
+                    <p class="text-gray-400">Professional development of applications for iOS and Android platforms.</p>
+                </div>
+
+                <div
+                    class="activity-card bg-gray-800 border-gray-700 overflow-hidden group  hover:shadow-lg  hover:shadow-blue-600/10  transition-all duration-300 rounded-lg p-6">
+                    <i data-lucide="camera"
+                        class="w-12 h-12 mb-4 text-blue-400 group -hover:scale-110 transition-transform duration-300"></i>
+                    <h3 class="text-xl font-semibold mb-2">Photography</h3>
+                    <p class="text-gray-400">Producing high-quality photos across various categories at a professional
+                        level.</p>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <h2 class="text-3xl font-bold mb-4 text-center">My Journey</h2>
+            <div class="space-y-4">
+                <div class="journey-item bg-gray-800 border-gray-700 overflow-hidden rounded-lg">
+                    <div class="p-3">
+                        <button
+                            class="w-full flex justify-between items-center text-left p-2  hover:bg-gray-700 transition-colors duration-200"
+                            onclick="toggleSection('early-passion')">
+                            <span class="text-xl font-semibold">Early Passion</span>
+                            <i data-lucide="chevron-down" class="h-6 w-6" id="early-passion-icon"></i>
+                        </button>
+                        <div id="early-passion-content" class="hidden mt-4 text-gray-300">
+                            <p>Developed a strong foundation in programming languages during 10th and 12th grades.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item bg-gray-800 border-gray-700 overflow-hidden rounded-lg">
+                    <div class="p-3">
+                        <button
+                            class="w-full flex justify-between items-center text-left p-2  hover:bg-gray-700 transition-colors duration-200"
+                            onclick="toggleSection('early-passion')">
+                            <span class="text-xl font-semibold">Project Portfolio</span>
+                            <i data-lucide="chevron-down" class="h-6 w-6" id="early-passion-icon"></i>
+                        </button>
+                        <div id="early-passion-content" class="hidden mt-4 text-gray-300">
+                            <p>Created various web applications, including Netflix and Spotify clones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="journey-item bg-gray-800 border-gray-700 overflow-hidden rounded-lg">
+                    <div class="p-3">
+                        <button
+                            class="w-full flex justify-between items-center text-left p-2  hover:bg-gray-700 transition-colors duration-200"
+                            onclick="toggleSection('early-passion')">
+                            <span class="text-xl font-semibold">Continuous Learning</span>
+                            <i data-lucide="chevron-down" class="h-6 w-6" id="early-passion-icon"></i>
+                        </button>
+                        <div id="early-passion-content" class="hidden mt-4 text-gray-300">
+                            <p> Avid reader of books like 'Ikigai,' 'The Psychology of Money,' and 'Rich Dad Poor Dad.'
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-gray-900 text-gray-300 py-12 mt-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+           
+            <div class="space-y-4">
+              <h4 class="text-lg font-semibold text-white">Quick Links</h4>
+              <ul class="space-y-2">
+                <li><a href="#about" class="hover:text-blue-400 transition-colors duration-200">About</a></li>
+                <li><a href="#skills" class="hover:text-blue-400 transition-colors duration-200">Skills</a></li>
+                <li><a href="#projects" class="hover:text-blue-400 transition-colors duration-200">Projects</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition-colors duration-200">Contact</a></li>
+              </ul>
+            </div>
+            <div class="space-y-4">
+              <h4 class="text-lg font-semibold text-white">Connect</h4>
+              <div class="flex space-x-4">
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                  <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                  <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+                <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                  <i data-lucide="twitter" class="w-6 h-6"></i>
+                </a>
+                <a href="mailto:your.email@example.com" class="text-gray-400 hover:text-blue-400 transition-colors duration-200">
+                  <i data-lucide="mail" class="w-6 h-6"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+            <p class="text-sm">© <span id="current-year"></span> tony stark. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
