@@ -1,4 +1,4 @@
-
+// Stack Implementation using array
 #include <stdio.h>
 #define maxsize 10
 
