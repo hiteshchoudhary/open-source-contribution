@@ -1,1 +1,1 @@
-console.log("LMAO")
+console.log("Hello Console reader")
