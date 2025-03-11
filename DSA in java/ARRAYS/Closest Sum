@@ -1,0 +1,36 @@
+import java.util.* ;
+import java.io.*; 
+public class Solution
+{
+
+public static int closest3Sum(ArrayList<Integer> arr, int n, int target)
+    {
+        Collections.sort(arr);
+        int closestSum = Integer.MAX_VALUE / 2;
+
+        for(int i=0; i<n-2; i++) {
+            int left = i + 1; 
+            int right = n - 1;
+
+            while(left < right) {
+                int currSum = arr.get(i) + arr.get(left) + arr.get(right);
+
+                if(Math.abs(currSum - target) < Math.abs(closestSum - target)) {
+                    closestSum = currSum;
+                } else if(Math.abs(currSum - target) == Math.abs(closestSum - target)) {
+                    closestSum = Math.min(closestSum, currSum);
+                }
+
+                if(currSum < target) {
+                    left++;
+                } else if(currSum > target) {
+                    right--;
+                } else {
+                    return currSum;
+                }
+            }
+        }
+
+        return closestSum;
+    }
+}

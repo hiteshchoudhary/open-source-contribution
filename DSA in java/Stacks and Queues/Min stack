@@ -1,0 +1,53 @@
+
+import java.util.ArrayList;
+
+public class Solution {
+
+    static class MinStack {
+        private int top;
+        private ArrayList<Integer> stack;
+        private ArrayList<Integer> minStack;
+
+        public MinStack() {
+            stack = new ArrayList<>();
+            minStack = new ArrayList<>();
+            top = -1;
+        }
+
+        // Function to add another element equal to num at the top of stack.
+        public void push(int data) {
+            stack.add(++top, data);
+            if (minStack.isEmpty() || data <= minStack.get(minStack.size() - 1)) {
+                minStack.add(data);
+            }
+        }
+
+        // Function to remove the top element of the stack.
+        public int pop() {
+            if (top == -1) {
+                return -1;
+            }
+            int removedElement = stack.remove(top--);
+            if (removedElement == minStack.get(minStack.size() - 1)) {
+                minStack.remove(minStack.size() - 1);
+            }
+            return removedElement;
+        }
+
+        // Function to return the top element of stack if it is present. Otherwise return -1.
+        public int top() {
+            if (top == -1) {
+                return -1;
+            }
+            return stack.get(top);
+        }
+
+        // Function to return minimum element of stack if it is present. Otherwise return -1.
+        public int getMin() {
+            if (minStack.isEmpty()) {
+                return -1;
+            }
+            return minStack.get(minStack.size() - 1);
+        }
+    }
+}

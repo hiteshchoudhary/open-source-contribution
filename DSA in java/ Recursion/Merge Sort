@@ -1,0 +1,41 @@
+public class Solution {
+    public static void mergeSort(int[] arr, int n) {
+        divide(arr, 0, n - 1);
+    }
+
+    static void divide(int[] arr, int s, int e) {
+        if (s >= e) {
+            return;
+        }
+        int m = s + (e - s) / 2;
+        divide(arr, s, m);
+        divide(arr, m + 1, e);
+
+        conquer(arr, s, m, e);
+    }
+
+    static void conquer(int[] arr, int s, int m, int e) {
+        int[] merged = new int[e - s + 1];
+        int arr1i = s;
+        int arr2i = m + 1;
+        int x = 0;
+
+        while (arr1i <= m && arr2i <= e) {
+            if (arr[arr1i] < arr[arr2i]) {
+                merged[x++] = arr[arr1i++];
+            } else {
+                merged[x++] = arr[arr2i++];
+            }
+        }
+        while (arr1i <= m) {
+            merged[x++] = arr[arr1i++];
+        }
+        while (arr2i <= e) {
+            merged[x++] = arr[arr2i++];
+        }
+
+        for(int i=0, j=s; i<merged.length; i++, j++) {
+			    arr[j] = merged[i];
+		    }
+    }
+}

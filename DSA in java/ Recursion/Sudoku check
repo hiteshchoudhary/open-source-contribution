@@ -1,0 +1,66 @@
+public class Solution {
+
+	public static boolean isItSudoku(int matrix[][]) {
+        return solve(matrix, 0, 0);
+    }
+
+    public static boolean solve(int board[][], int row, int col) {
+        if (col == 9) {
+            row++;
+            col = 0;
+        }
+
+        if (row == 9) {
+            return true;
+        }
+
+        // Handling given number
+        if (board[row][col] != 0) {
+            return solve(board, row, col + 1);
+        } 
+
+        // Handling other cells
+        for (int num = 1; num <= 9; num++) {
+            if (isValid(board, row, col, num)) {
+                board[row][col] = num;
+                if (solve(board, row, col + 1)) {
+                    return true;
+                }
+                // Backtrack
+                board[row][col] = 0;
+            }
+        }
+
+        return false;
+    }
+
+    public static boolean isValid(int board[][], int row, int col, int num) {
+        // Row check
+        for (int j = 0; j < 9; j++) {
+            if (board[row][j] == num) {
+                return false;
+            }
+        }
+
+        // Column check
+        for (int i = 0; i < 9; i++) {
+            if (board[i][col] == num) {
+                return false;
+            }
+        }
+
+        // Grid check
+        int gRow = (row / 3) * 3;
+        int gCol = (col / 3) * 3;
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (board[gRow + i][gCol + j] == num) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+}

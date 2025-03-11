@@ -1,0 +1,42 @@
+import java.util.* ;
+
+import java.io.*; 
+
+public class Queue {
+
+   ArrayList<Integer> arr=new ArrayList<Integer>();
+
+    Queue() {
+        // Implement the Constructor
+    }
+
+    /*----------------- Public Functions of Queue -----------------*/
+
+    boolean isEmpty() {
+        return (arr.size() == 0);
+    }
+
+ 
+
+    void enqueue(int data) {
+         arr.add(data);
+    }
+
+ 
+
+    int dequeue() {
+        if(isEmpty()) {
+            return -1;
+        }
+       int del = arr.remove(0);
+       return del;
+    }
+
+    int front() {
+        if(isEmpty()) {
+            return -1;
+        }
+        int f = arr.get(0);
+        return f;
+    }
+}

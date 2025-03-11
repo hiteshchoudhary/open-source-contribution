@@ -1,0 +1,54 @@
+import java.util.* ;
+import java.io.*; 
+/****************************************************************
+
+    Following is the class structure of the Node class:
+
+    class Node<Integer>
+    {
+        int data;
+        Node<Integer> next;
+
+        public Node(int data)
+        {
+            this.data = data;
+            this.next = null;
+        }
+    }
+
+ *****************************************************************/
+public class Solution {
+    public static Node<Integer> addNodes(Node<Integer> head, int n, int m) {
+        Node temp = head;
+        int count = 0;
+        int val = 0;
+
+        while (temp != null) {
+            count = 1;
+            val = 0;
+
+            while (count < m && temp != null) {
+                temp = temp.next;
+                count++;
+            }
+            if(temp == null) {
+                break;
+            }
+
+            count = 1;
+            while(count <= n && temp.next != null) {
+                temp = temp.next;
+                val += temp.data;
+                count++;
+            }
+            Node newnode = new Node(val);
+            newnode.next = temp.next;
+            temp.next = newnode;
+            temp = newnode.next;
+            if (temp == null){
+                return head;
+            }
+        }
+        return head;
+    }
+}

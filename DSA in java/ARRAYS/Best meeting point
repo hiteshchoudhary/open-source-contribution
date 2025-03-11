@@ -1,0 +1,46 @@
+import java.util.*;
+
+public class Solution {
+    public static int findBestMeetingPoint(ArrayList<ArrayList<Integer>> mat) {
+        int n = mat.size();
+		int m = mat.get(0).size();
+		int a, b; // median point
+		int ans = 0;
+
+        List<Integer> x = new ArrayList<>();
+        List<Integer> y = new ArrayList<>();
+        List<int[]> points = new ArrayList<>();
+
+        // Collect all points
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (mat.get(i).get(j) == 1) {
+                    x.add(i);
+                    y.add(j);
+                    points.add(new int[]{i, j});
+                }
+            }
+        }
+
+        // Sort the x and y coordinates
+        Collections.sort(x);
+        Collections.sort(y);
+
+        // Find median of x and y coordinates
+        if ((x.size() & 1) == 1) { // If size is odd
+            a = x.get(x.size() / 2);
+            b = y.get(y.size() / 2);
+        } else { // If size is even
+            a = (x.get(x.size() / 2) + x.get(x.size() / 2 - 1)) / 2;
+            b = (y.get(y.size() / 2) + y.get(y.size() / 2 - 1)) / 2;
+        }
+
+        // Calculate the total distance from the best meeting point
+        for (int[] pt : points) {
+            ans += Math.abs(a - pt[0]);
+            ans += Math.abs(b - pt[1]);
+        }
+
+        return ans;
+    }
+}
