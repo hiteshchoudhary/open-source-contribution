@@ -1,0 +1,1 @@
+kuch nahi sir naya naya github sikha hai aapke git english playlist aur last walle lecture me jo open source contrubtuion ke bare me apne learnings di hai usi ka test kar raha hu agar kuch bhul chuk ho to please maaaf karna
