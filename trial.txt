@@ -1,0 +1,5 @@
+This is a simple text created to learn about open-source contributions.
+
+Thank you, Hitesh!
+
+By the way, I came across your Git course on FreeCodeCamp, and I loved it!
