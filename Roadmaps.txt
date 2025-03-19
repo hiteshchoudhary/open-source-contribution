@@ -1,0 +1,6 @@
+Here is a link where you can explore roadmaps for various technologies you may be interested in learning.
+
+https://roadmap.sh/
+
+Here is a link to 'Project IDX,' an online VS Code-like application designed for web developers.
+https://idx.dev/
