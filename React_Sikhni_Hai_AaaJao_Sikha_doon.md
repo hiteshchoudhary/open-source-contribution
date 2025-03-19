@@ -14,6 +14,10 @@ Complete React Roadmap 🔥
 |       |     |- useEffect
 |       |     |- useContext
 |       |     |- useReducer
+|       |     |- useCallback
+|       |     |- useMemo
+|       |     |- useRef
+|       |     |- useReducer
 |       |    └ Custom Hooks
 |       |
 |       |-- Functional vs Class Components
