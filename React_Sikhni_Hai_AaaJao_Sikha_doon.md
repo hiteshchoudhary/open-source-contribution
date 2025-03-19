@@ -32,7 +32,7 @@ Complete React Roadmap 🔥
 |       |-- Thunk
 |       |     └ Saga
 |       |
-|       |-- React Router 
+|       |-- React Router 6
 |       |-- Error Boundaries
 |       |-- Portals
 |       |-- Render Props
