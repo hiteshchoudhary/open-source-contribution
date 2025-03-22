@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">BrandName</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#cta" class="cta-button">Get Started</a>
+    </nav>
+</body>
+</html>
+
+<style>
+    /* Styles for Navbar */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        background-color: rgb(46, 7, 63);
+    }
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background: rgb(122, 28, 172);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+    .nav-links li {
+        margin: 0 15px;
+    }
+    .nav-links a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+    .nav-links a:hover {
+        color: rgb(235, 211, 248);
+    }
+    .cta-button {
+        background: linear-gradient(90deg, rgb(88, 0, 255), rgb(0, 150, 255), rgb(0, 215, 255));
+        color: white;
+        padding: 12px 25px;
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        transition: 0.3s;
+        text-align: center;
+        display: inline-block;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .cta-button:hover {
+        background: linear-gradient(90deg, rgb(0, 215, 255), rgb(0, 150, 255), rgb(88, 0, 255));
+        color: #fff;
+        transform: scale(1.05);
+    }
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+        .navbar {
+            padding: 15px 20px;
+            flex-wrap: wrap;
+        }
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            background: rgb(122, 28, 172);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            z-index: 1000;
+        }
+        .nav-links.active {
+            display: flex;
+        }
+        .nav-links li {
+            margin: 10px 0;
+        }
+        .cta-button {
+            padding: 12px 20px;
+            font-size: 14px;
+            display: block;
+            width: 90%;
+            margin: 15px auto;
+            text-align: center;
+        }
+    }
+</style>
