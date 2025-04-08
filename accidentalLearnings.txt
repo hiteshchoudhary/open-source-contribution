@@ -1,0 +1,6 @@
+
+# Here, you can highlights the unintentional yet valuable lessons learned during the learning process of git, opensource contribution and repo web hosting services.
+
+1 - my Learnings is to  save files before running any Git commands to makesure all changes are included in your commits.​
+
+
