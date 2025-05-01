@@ -1,0 +1,30 @@
+header{
+    background-color: peachpuff;
+    text-align: center;
+    padding: 2px; margin: 3px;
+    border: solid tan;
+    border-radius: 9px;
+}
+
+body>div{
+    background-color: rgba(222, 195, 195, 0.701);
+    text-align: justify; 
+    padding: 13px;
+    border-radius: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+}
+
+body div h2{
+    text-align: center;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: large;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 13px;
+    margin: 2px;
+}
