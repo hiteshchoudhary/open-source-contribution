@@ -1,0 +1,18 @@
+{
+  "name": "note-taking-cli-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "figlet": "^1.8.1",
+    "node-emoji": "^2.2.0",
+    "yargs": "^17.7.2"
+  }
+}
