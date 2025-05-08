@@ -1,0 +1,21 @@
+
+mern-todo-app/
+├── client/                    # React frontend
+│   ├── public/                # Static files (index.html, favicon, etc.)
+│   ├── src/                   # React source code
+│   │   ├── components/        # Reusable UI components
+│   │   ├── pages/             # Page components (e.g., Home, TodoList)
+│   │   ├── App.js             # Main React app component
+│   │   ├── index.js           # Entry point for React
+│   │   └── styles/            # CSS/SCSS files
+│   ├── package.json           # Frontend dependencies
+│   └── .env                   # Environment variables (e.g., API URL)
+├── server/                    # Express.js/Node.js backend
+│   ├── models/                # MongoDB schemas (e.g., Todo model)
+│   ├── routes/                # API routes (e.g., /todos)
+│   ├── controllers/           # Route handlers (business logic)
+│   ├── middleware/            # Custom middleware (e.g., authentication)
+│   ├── index.js               # Entry point for the backend
+│   ├── package.json           # Backend dependencies
+│   └── .env                   # Environment variables (e.g., MongoDB URI)
+└── README.md                  # Project documentation
