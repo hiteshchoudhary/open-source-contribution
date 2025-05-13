@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Trail</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        overflow: hidden;
+        background: radial-gradient(circle at center, #0d0d0d, #000000);
+        height: 100vh;
+        cursor: none;
+      }
+      .trail {
+        --size: 12px;
+        position: absolute;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 50%;
+        pointer-events: none;
+        mix-blend-mode: screen;
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+        will-change: transform, opacity;
+      }
+      .color1 {
+        background: #ff00cc;
+        box-shadow: 0 0 10px #ff00cc;
+      }
+      .color2 {
+        background: #00ffff;
+        box-shadow: 0 0 10px #00ffff;
+      }
+      .color3 {
+        background: #ccff00;
+        box-shadow: 0 0 10px #ccff00;
+      }
+      @keyframes pulse {
+        to {
+          opacity: 0;
+          transform: scale(2) rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const colors = ["color1", "color2", "color3"];
+      const poolSize = 100;
+      const pool = [];
+
+      for (let i = 0; i < poolSize; i++) {
+        const dot = document.createElement("div");
+        dot.className = "trail";
+        dot.style.visibility = "hidden";
+        document.body.appendChild(dot);
+        pool.push(dot);
+      }
+
+      document.addEventListener("mousemove", (e) => {
+        for (let i = 0; i < 3; i++) {
+          const dot = pool.find((d) => d.style.visibility === "hidden");
+          if (!dot) return;
+
+          dot.className = `trail ${colors[Math.floor(Math.random() * 3)]}`;
+          dot.style.left = `${e.clientX + (Math.random() * 10 - 5)}px`;
+          dot.style.top = `${e.clientY + (Math.random() * 10 - 5)}px`;
+          dot.style.animation = "none";
+          dot.style.opacity = "1";
+          dot.style.visibility = "visible";
+          void dot.offsetWidth;
+          dot.style.animation = "pulse 0.7s ease-out forwards";
+        }
+      });
+
+      document.body.addEventListener("animationend", (e) => {
+        if (e.target.classList.contains("trail")) {
+          e.target.style.visibility = "hidden";
+          e.target.style.opacity = "0";
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- Abood Clasher -->
