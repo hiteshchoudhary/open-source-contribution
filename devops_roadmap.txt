@@ -1,0 +1,65 @@
+[ChatGPT Generated] Absolute DevOps Roadmap (Text-Only Format)
+
+1. Basics First (System + Networking)
+- Learn Linux fundamentals (bash, file system, permissions)
+- Understand system processes and package managers (apt/yum)
+- Study basic networking: IP, DNS, HTTP/HTTPS, ports, firewalls
+
+2. Version Control System
+- Master Git: init, clone, add, commit, push, pull, merge, branch
+- GitHub/GitLab/Bitbucket usage
+
+3. Scripting Knowledge
+- Bash scripting (loops, conditions, functions)
+- Optional: Learn Python for automation
+
+4. Continuous Integration/Continuous Deployment (CI/CD)
+- Understand what CI/CD is and why it matters
+- Learn Jenkins (pipelines, jobs)
+- Explore GitHub Actions / GitLab CI
+
+5. Configuration Management
+- Learn Ansible (playbooks, inventory, roles)
+- Know when and why to use Chef or Puppet (not necessary unless required)
+
+6. Containerization
+Learn Docker:
+- Images, containers, volumes, networks
+- Dockerfile creation
+- Docker Compose for multi-container setups
+
+7. Container Orchestration
+Learn Kubernetes:
+- Pods, Deployments, Services
+- ConfigMaps, Secrets, Volumes
+- Helm (basic chart deployment)
+
+8. Cloud Fundamentals
+Choose one provider (AWS preferred):
+- EC2, S3, IAM, VPC, RDS
+- Cloud CLI (awscli)
+- Optional: Azure / GCP later
+
+9. Infrastructure as Code (IaC)
+Learn Terraform:
+- Providers, Resources, Variables
+- Deploy infrastructure on AWS
+
+10. Monitoring & Logging
+Understand log types and log rotation
+
+Use tools like:
+- Prometheus + Grafana
+- ELK Stack (Elasticsearch, Logstash, Kibana)
+
+11. Security Essentials
+- SSH, firewalls, SSL/TLS
+- Secrets management (HashiCorp Vault, AWS Secrets Manager)
+
+12. Project + Resume
+Build 2–3 full DevOps projects:
+- Docker + Jenkins + Ansible + Kubernetes on AWS
+- CI/CD pipeline using GitHub Actions + Terraform + EKS
+
+- Add to GitHub, write proper README
+- Update resume with DevOps tools stack
