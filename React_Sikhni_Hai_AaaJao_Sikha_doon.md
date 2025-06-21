@@ -14,6 +14,11 @@ Complete React Roadmap 🔥
 |       |     |- useEffect
 |       |     |- useContext
 |       |     |- useReducer
+              useRef
+              useCallback
+              useMemo
+              useId
+              
 |       |    └ Custom Hooks
 |       |
 |       |-- Functional vs Class Components
@@ -59,6 +64,7 @@ Complete React Roadmap 🔥
 |
 |--- Forms and Validation
 |       |-- Formik (Form Library)
+        React-hook-form for validation
 |       |-- Yup (Schema Validation)
 |      └─ Controlled vs Uncontrolled Components
 |
