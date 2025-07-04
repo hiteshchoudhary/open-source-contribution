@@ -1,15 +1,21 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main() {
-    int n, sum = 0;
-    cout << "Enter the number of elements: ";
-    cin >> n;
-    int arr[n]; 
-    cout << "Enter " << n << " elements: ";
-    for(int i = 0; i < n; i++) {
-        cin >> arr[i];
-        sum += arr[i];
-    }
-    cout << "Sum of the elements: " << sum << endl;
+    int num1, num2, sum;
+
+    // Input two numbers
+    cout << "Enter first number: ";
+    cin >> num1;
+
+    cout << "Enter second number: ";
+    cin >> num2;
+
+    // Calculate sum
+    sum = num1 + num2;
+
+    // Output result
+    cout << "Sum = " << sum << endl;
+
     return 0;
-};
+}
