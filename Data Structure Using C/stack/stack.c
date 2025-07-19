@@ -38,11 +38,11 @@ void push()
 {
     if(top == maxsize - 1 )
     {
-        printf("stack is overflow");
+        printf("stack is overflow / stack is full");
     }
     else
     {
-        printf("enter value:");
+        printf("enter data to push on stack:");
         top++;
         scanf("%d",&stack[top]);
     }
@@ -54,7 +54,7 @@ void pop()
     }
     else
     {
-        printf("deleted item %d",stack[top]);
+        printf("poped  item is %d",stack[top]);
         top--;
     }
 }
@@ -62,10 +62,11 @@ void display()
 {
     if (top == -1)
     {
-        printf("stack is empty");
+        printf("stack is empty there is no data please push data");
     }
     else
     {
+        printf("your data is");
         for(int i =0; i<=top; i++)
         {
             printf("%d\t",stack[i]);
