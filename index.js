@@ -1,1 +1,1 @@
-console.log("LAMFAO");
+console.log("LMAO");
