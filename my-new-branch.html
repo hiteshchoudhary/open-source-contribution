@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sign in — Example</title>
+    <style>
+      :root {
+        --bg: #0f1724;
+        --card: #0b1220;
+        --muted: #9aa4b2;
+        --accent: #2ea44f;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial;
+        background: linear-gradient(180deg, #071226 0%, var(--bg) 100%);
+        color: #e6eef6;
+      }
+      .card {
+        width: 320px;
+        padding: 28px;
+        border-radius: 12px;
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.02),
+          rgba(0, 0, 0, 0.02)
+        );
+        box-shadow: 0 6px 30px rgba(2, 6, 23, 0.6);
+        backdrop-filter: blur(6px);
+      }
+      .logo {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 18px;
+      }
+      .oct {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        background: linear-gradient(135deg, #111827, #0b1220);
+        display: grid;
+        place-items: center;
+        font-weight: 700;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 0 0 4px;
+      }
+      p.sub {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      form {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      label {
+        font-size: 12px;
+        color: var(--muted);
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px 12px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        background: transparent;
+        color: inherit;
+        outline: none;
+        font-size: 14px;
+      }
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 13px;
+      }
+      .checkbox {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+      }
+      .btn {
+        margin-top: 4px;
+        padding: 10px;
+        border-radius: 8px;
+        border: 0;
+        background: var(--accent);
+        color: #062014;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .link {
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 13px;
+      }
+      footer {
+        margin-top: 14px;
+        text-align: center;
+        color: var(--muted);
+        font-size: 12px;
+      }
+      @media (max-width: 360px) {
+        .card {
+          width: 92%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card" role="main">
+      <div class="logo">
+        <div class="oct">GH</div>
+        <div>
+          <h1>Sign in to Example</h1>
+          <p class="sub">Welcome back — please sign in to continue</p>
+        </div>
+      </div>
+
+      <form onsubmit="event.preventDefault(); alert('Signed in (demo)');">
+        <div>
+          <label for="user">Email or username</label>
+          <input id="user" type="text" required placeholder="you@example.com" />
+        </div>
+
+        <div>
+          <label for="pass">Password</label>
+          <input id="pass" type="password" required placeholder="••••••••" />
+        </div>
+
+        <div class="row">
+          <label class="checkbox"><input type="checkbox" /> Remember me</label>
+          <a class="link" href="#">Forgot password?</a>
+        </div>
+
+        <button class="btn" type="submit">Sign in</button>
+      </form>
+
+      <footer>
+        New to Example? <a class="link" href="#">Create an account</a>
+      </footer>
+    </main>
+  </body>
+</html>
