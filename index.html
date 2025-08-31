@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Structure</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f0f2f5; }
+        .navbar {
+            background: #1877f2;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo { font-size: 2em; font-weight: bold; }
+        .navbar .search input {
+            padding: 5px 10px;
+            border-radius: 16px;
+            border: none;
+            outline: none;
+        }
+        .navbar .profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .navbar .notifications {
+            margin-right: 20px;
+            position: relative;
+        }
+        .navbar .notifications span {
+            background: red;
+            color: #fff;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 0.8em;
+            position: absolute;
+            top: -8px;
+            right: -8px;
+        }
+        .navbar .menu {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+        .navbar .menu img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 30px auto;
+            gap: 20px;
+        }
+        .sidebar, .contacts {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            width: 220px;
+            min-height: 400px;
+        }
+        .feed {
+            flex: 1;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            min-height: 400px;
+        }
+        .post {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+        }
+        .post:last-child { border-bottom: none; }
+        .post .author { font-weight: bold; }
+        .post .content { margin: 8px 0; }
+        .post .actions {
+            display: flex;
+            gap: 15px;
+            margin-top: 8px;
+        }
+        .post .actions button {
+            background: none;
+            border: none;
+            color: #1877f2;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .post .comments {
+            margin-top: 10px;
+            background: #f0f2f5;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        .post .comments .comment {
+            margin-bottom: 8px;
+        }
+        .post .comments .comment:last-child {
+            margin-bottom: 0;
+        }
+        .sidebar ul, .contacts ul { list-style: none; padding: 0; }
+        .sidebar li, .contacts li { margin-bottom: 15px; }
+        .sidebar li:last-child, .contacts li:last-child { margin-bottom: 0; }
+        .sidebar .shortcuts {
+            margin-top: 30px;
+        }
+        .sidebar .shortcuts h5 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .contacts { background: #fff; }
+        .contacts .group-chats {
+            margin-top: 20px;
+        }
+        .contacts .group-chats h5 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .story-bar {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .story {
+            width: 80px;
+            height: 120px;
+            background: #e4e6eb;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 8px;
+            font-size: 0.9em;
+            color: #333;
+            position: relative;
+        }
+        .story img {
+            width: 100%;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 8px 8px 0 0;
+        }
+        .create-post {
+            background: #f0f2f5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .create-post input {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            outline: none;
+        }
+        .create-post button {
+            background: #1877f2;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        .create-post .media {
+            display: flex;
+            gap: 8px;
+        }
+        .create-post .media img {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+        }
+        .events {
+            margin-top: 30px;
+        }
+        .events h5 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .events ul {
+            list-style: none;
+            padding: 0;
+        }
+        .events li {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        .trending {
+            margin-top: 30px;
+        }
+        .trending h5 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .trending ul {
+            list-style: none;
+            padding: 0;
+        }
+        .trending li {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+        .suggestions {
+            margin-top: 30px;
+        }
+        .suggestions h5 {
+            margin: 0 0 10px 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .suggestions ul {
+            list-style: none;
+            padding: 0;
+        }
+        .suggestions li {
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .suggestions img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+        .footer {
+            background: #f0f2f5;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            margin-top: 40px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">facebook</div>
+        <div class="search">
+            <input type="text" placeholder="Search Facebook">
+        </div>
+        <div class="menu"></div>
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/home.png" alt="Home">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/groups.png" alt="Groups">
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/tv.png" alt="Watch">
+        </div>
+        <div class="notifications"></div>
+            <img src="https://img.icons8.com/ios-filled/24/ffffff/appointment-reminders.png" alt="Notifications">
+            <span>3</span>
+        </div>
+        <div class="profile"></div>
+            <img src="https://via.placeholder.com/32" alt="Profile" style="border-radius:50%;">
+            <span>Username</span>
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li>Home</li>
+                <li>Friends</li>
+                <li>Groups</li>
+                <li>Marketplace</li>
+                <li>Watch</li>
+                <li>Memories</li>
+                <li>Saved</li>
+                <li>Pages</li>
+                <li>Events</li>
+                <li>Jobs</li>
+                <li>Gaming</li>
+                <li>Weather</li>
+                <li>Fundraisers</li>
+                <li>Messenger</li>
+                <li>COVID-19 Info Center</li>
+            </ul>
+            <div class="shortcuts">
+                <h5>Your Shortcuts</h5>
+                <ul>
+                    <li>React Developers</li>
+                    <li>Cooking Club</li>
+                    <li>Photography</li>
+                    <li>Book Lovers</li>
+                    <li>Travel Buddies</li>
+                    <li>Fitness Group</li>
+                    <li>Music Fans</li>
+                </ul>
+            </div>
+            <div class="events">
+                <h5>Upcoming Events</h5>
+                <ul>
+                    <li>Webinar: AI Trends - Today 5pm</li>
+                    <li>Birthday: Alice - Tomorrow</li>
+                    <li>Hackathon - Friday</li>
+                    <li>Yoga Class - Saturday</li>
+                    <li>Concert - Sunday</li>
+                </ul>
+            </div>
+            <div class="trending"></div>
+                <h5>Trending</h5>
+                <ul>
+                    <li>#OpenSource</li>
+                    <li>#AI</li>
+                    <li>#ReactJS</li>
+                    <li>#WebDevelopment</li>
+                    <li>#Music</li>
+                </ul>
+            </div>
+        </aside>
+        <main class="feed">
+            <div class="story-bar">
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 1">
+                    Alice
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 2">
+                    Bob
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 3">
+                    Charlie
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 4">
+                    You
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 5">
+                    David
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 6">
+                    Eve
+                </div>
+                <div class="story">
+                    <img src="https://via.placeholder.com/80x70" alt="Story 7">
+                    Frank
+                </div>
+            </div>
+            <div class="create-post">
+                <img src="https://via.placeholder.com/32" alt="Profile" style="border-radius:50%;">
+                <input type="text" placeholder="What's on your mind, Username?">
+                <div class="media">
+                    <img src="https://img.icons8.com/color/48/000000/image.png" alt="Photo/Video" title="Photo/Video">
+                    <img src="https://img.icons8.com/color/48/000000/happy--v1.png" alt="Feeling/Activity" title="Feeling/Activity">
+                </div>
+                <button>Post</button>
+            </div>
+            <!-- Multiple posts for length and realism -->
+            <div class="post">
+                <div class="author">John Doe</div>
+                <div class="content">Hello, this is my first post!</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Alice:</b> Welcome John!</div>
+                    <div class="comment"><b>Bob:</b> Nice to see you here.</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Jane Smith</div>
+                <div class="content">Enjoying a sunny day at the park.</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Charlie:</b> Looks fun!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Alice Johnson</div>
+                <div class="content">Just finished a 5k run! 🏃‍♀️</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>David:</b> Congrats!</div>
+                    <div class="comment"><b>Eve:</b> Amazing job!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Bob Lee</div>
+                <div class="content">Check out my new photography portfolio: <a href="#">bobphotos.com</a></div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Frank:</b> Awesome shots!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Charlie Kim</div>
+                <div class="content">Had a great time at the hackathon. Learned so much!</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Jane:</b> Glad you enjoyed it!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">David Park</div>
+                <div class="content">Who's up for a movie night this weekend?</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Alice:</b> I'm in!</div>
+                    <div class="comment"><b>Bob:</b> Count me too!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Eve Adams</div>
+                <div class="content">Started learning ReactJS. Any tips?</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>John:</b> Practice a lot!</div>
+                    <div class="comment"><b>Jane:</b> Check the official docs.</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Frank Miller</div>
+                <div class="content">Loving the new music album by The Synths!</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Charlie:</b> It's great!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Grace Lee</div>
+                <div class="content">Baked some cookies today. 🍪</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Bob:</b> Save me some!</div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="author">Henry Ford</div>
+                <div class="content">Looking for book recommendations.</div>
+                <div class="actions">
+                    <button>Like</button>
+                    <button>Comment</button>
+                    <button>Share</button>
+                </div>
+                <div class="comments">
+                    <div class="comment"><b>Alice:</b> Try 'Atomic Habits'!</div>
+                </div>
+            </div>
+            <!-- Add more posts as needed for length -->
+            <!-- ... -->
+            <div class="suggestions">
+                <h5>People You May Know</h5>
+                <ul>
+                    <li>
+                        <img src="https://via.placeholder.com/32" alt="Profile">
+                        <span>Sam Carter</span>
+                        <button>Add Friend</button>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/32" alt="Profile">
+                        <span>Linda Wong</span>
+                        <button>Add Friend</button>
+                    </li>
+                    <li>
+                        <img src="https://via.placeholder.com/32" alt="Profile">
+                        <span>Oscar Diaz</span>
+                        <button>Add Friend</button>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <aside class="contacts">
+            <h4>Contacts</h4>
+            <ul>
+                <li>Alice</li>
+                <li>Bob</li>
+                <li>Charlie</li>
+                <li>David</li>
+                <li>Eve</li>
+                <li>Frank</li>
+                <li>Grace</li>
+                <li>Henry</li>
+                <li>Isabel</li>
+                <li>Jack</li>
+                <li>Karen</li>
+                <li>Liam</li>
+                <li>Mona</li>
+                <li>Nina</li>
+                <li>Oscar</li>
+                <li>Paul</li>
+                <li>Quinn</li>
+                <li>Rita</li>
+                <li>Sam</li>
+                <li>Tina</li>
+            </ul>
+            <div class="group-chats">
+                <h5>Group Chats</h5>
+                <ul>
+                    <li>Family</li>
+                    <li>Project Team</li>
+                    <li>Book Club</li>
+                    <li>Travel Group</li>
+                    <li>Music Lovers</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+    <div class="footer">
+        Facebook &copy; 2024 &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Advertising</a> &middot; <a href="#">Cookies</a>
+    </div>
+</body>
+</html></div>
