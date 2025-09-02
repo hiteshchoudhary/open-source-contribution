@@ -7,7 +7,7 @@ int stack[maxsize], top = -1;
 void push();
 void pop();
 void display();
-
+void peak();
 
 int main()
 {
@@ -20,6 +20,7 @@ int main()
         printf("Press 2 for pop\n");
         printf("Press 3 for display\n");
         printf("Press 4 for exit\n");
+        printf("press 5 for peak top element");
         printf("enter your choice: ");
         scanf("%d",&choice);
         
@@ -29,9 +30,22 @@ int main()
             case 2: pop(); break;
             case 3: display(); break;
             case 4: break;
+            case 5: peak();break;
             default: printf("Invalid choice");
         }
     }while(choice!=4);
+}
+
+
+void peak(){
+    if (top == -1)
+    {
+        printf("no element present in stack!!");
+    } 
+    else 
+    {
+        printf("the peek element : %d", stack[top]);
+    }
 }
 
 void push()
