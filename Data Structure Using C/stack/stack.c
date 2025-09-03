@@ -11,7 +11,7 @@ void display();
 
 int main()
 {
-    int choice;
+    int choice,x,y;
     
     do
     {
