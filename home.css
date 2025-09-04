@@ -1,0 +1,35 @@
+
+body {
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: darkseagreen;
+    color: aliceblue;
+    text-align: center;
+}
+
+h1{
+    /* text-align: center; */
+    font-size: 100px;
+}
+
+p {
+    /* text-align: center; */
+    font-size: larger;
+}
+
+div {
+    background-attachment: fixed;
+    height: 148px;
+    width: 270px;
+}
+
+header {
+    text-align: center;
+    height: 1vh;
+    width: 100vw;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
