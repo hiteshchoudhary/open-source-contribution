@@ -1,1 +1,1 @@
-Sir, NextJs tutorial is much needed. Try to make video on this as soon as possible.
+A good start by trying to learn , how to do open-source contributions on github 
