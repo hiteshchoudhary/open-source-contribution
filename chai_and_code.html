@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Chai & Code — Tribute</title>
+
+<style>
+:root {
+  --bg: #0f0f0f;
+  --card: #181818;
+  --text: #e7e3df;
+  --muted: #a59f9a;
+  --accent: #d57c3d;
+  --accent2: #b9662f;
+  --radius: 16px;
+  --shadow: 0 8px 28px rgba(0,0,0,0.32);
+  --mono: ui-monospace, "Fira Code", "JetBrains Mono", monospace;
+  --ui: system-ui, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: var(--ui);
+  color: var(--text);
+}
+
+.wrap {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 24px;
+  display: grid;
+  gap: 26px;
+}
+
+header {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.logo {
+  width: 78px;
+  height: 78px;
+  border-radius: 20px;
+  background: #1d1c1c;
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow);
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.hero h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.hero p {
+  line-height: 1.48;
+  color: var(--text);
+}
+
+.cta {
+  display: inline-block;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.15s ease;
+}
+
+.cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(213,124,61,0.25);
+}
+
+.snippet {
+  font-family: var(--mono);
+  background: #121212;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  color: #ccc;
+  border: 1px solid rgba(255,255,255,0.04);
+  overflow: hidden;
+}
+
+.thanks {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  background: #222;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.thanks h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--accent2);
+}
+
+.thanks p {
+  margin: 6px 0 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.features {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+  background: #131313;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.feature h4 {
+  margin: 0 0 6px 0;
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+footer {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<header>
+  <div class="logo">
+    <svg width="58" height="58" viewBox="0 0 64 64" fill="none">
+      <rect x="6" y="18" width="44" height="24" rx="8" fill="#272626" stroke="#383737"/>
+      <path d="M20 24h22c1.7 0 3 1.3 3 3v6c0 3.3-2.7 6-6 6H18c-3.3 0-6-2.7-6-6v-6c0-1.7 1.3-3 3-3z" fill="#2e2d2d"/>
+      <path d="M46 28c3 0 6 2.7 6 6s-3 6-6 6" stroke="#d57c3d" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M23 10c0 3.5-1.8 5-2.3 6s0.5 2.2 1.4 2.8" stroke="#d57c3d" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M29 8c0 3.8-1.9 5.5-2.5 6.6S27 19 28 19" stroke="#d57c3d" stroke-width="1.1" stroke-linecap="round"/>
+    </svg>
+  </div>
+
+  <div>
+    <h1>Chai & Code</h1>
+    <div class="subtitle">Inspired by the learning energy of Chai Aur Code.</div>
+  </div>
+</header>
+
+<section class="card hero">
+  <div>
+    <h2>A calm space to learn</h2>
+    <p>Chai Aur Code brings a vibe that feels real — simple, clear, and practical. This page is a small appreciation for the effort put into every video and lesson.</p>
+    <a href="#" class="cta">Made with Chai</a>
+  </div>
+
+  <div class="snippet">
+    <img src="https://media.licdn.com/dms/image/v2/D560BAQHtWMA-O8RDGw/company-logo_200_200/B56ZXeSiK3GsAI-/0/1743191156468?e=2147483647&v=beta&t=frqPVVV7HyAwTLOX6Bzf_F6zjKtkEF4tIgxJtD4AP0o" alt="">
+  </div>
+</section>
+
+<section class="card">
+  <div class="thanks">
+    <div class="avatar">CA</div>
+    <div>
+      <h3>Thank you, Hitesh</h3>
+      <p>Your teaching style and consistency make learning comfortable and enjoyable. The energy, humor, and real-world understanding you bring is unmatched.</p>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h3 style="color: var(--accent2); margin-top:0;">What this page reflects</h3>
+  <div class="features">
+    <div class="feature">
+      <h4>Warm energy</h4>
+      <p>A friendly tone, calm pacing, and clarity.</p>
+    </div>
+    <div class="feature">
+      <h4>Hands-on learning</h4>
+      <p>Real projects, real explanations.</p>
+    </div>
+    <div class="feature">
+      <h4>Clean style</h4>
+      <p>Minimal, dark UI with focus on content.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  Made with respect for Chai Aur Code ❤
+</footer>
+
+</div>
+</body>
+</html>
