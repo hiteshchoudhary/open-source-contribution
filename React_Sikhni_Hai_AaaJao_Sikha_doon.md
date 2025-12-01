@@ -22,7 +22,7 @@ Complete React Roadmap 🔥
 |       |-- Forms 
 |       |-- Controlled Components
 |       |-- Fragments
-|      └─ Higher-Order Components
+|       └─  Higher-Order Components
 |
 |--- Advanced Concepts
 |       |-- Context API
@@ -40,14 +40,14 @@ Complete React Roadmap 🔥
 |       |-- Lazy Loading
 |       |-- PropTypes
 |       |-- TypeScript
-|      └─ Server-side Rendering 
+|       └─  Server-side Rendering 
 |
 |--- Styling
 |       |-- CSS Modules
 |       |-- Styled Components
 |       |-- CSS-in-JS Libraries
 |       |-- Theming
-|      └─ Responsive Design 
+|       └─  Responsive Design 
 |
 |--- State Management
 |       |-- Local Component State
@@ -55,19 +55,19 @@ Complete React Roadmap 🔥
 |       |-- Redux State Management
 |       |-- MobX State Management
 |       |-- Recoil (Experimental)
-|      └─ Zustand 
+|       └─  Zustand 
 |
 |--- Forms and Validation
 |       |-- Formik (Form Library)
 |       |-- Yup (Schema Validation)
-|      └─ Controlled vs Uncontrolled Components
+|       └─  Controlled vs Uncontrolled Components
 |
 |--- GraphQL and APIs
 |       |-- Apollo Client (GraphQL)
 |       |-- Fetch API
 |       |-- Axios
 |       |-- RESTful APIs
-|      └─ Fetching Data in React
+|       └─  Fetching Data in React
 |
 |--- Performance Optimization
 |       |-- Memoization
@@ -76,25 +76,25 @@ Complete React Roadmap 🔥
 |       |-- Server-side Rendering (SSR)
 |       |-- React.lazy and Suspense
 |       |-- Performance Profiling (React DevTools)
-|      └─ Tree Shaking
+|       └─  Tree Shaking
 |
 |--- Security
 |       |-- Cross-Site Scripting Prevention
 |       |-- Cross-Site Request Forgery Protection
-|      └─ Content Security Policy (CSP)
+|       └─  Content Security Policy (CSP)
 |
 |--- Deployment and Build Tools
 |       |-- Webpack
 |       |-- Babel
 |       |-- ESLint
 |       |-- Prettier
-|      └─ CI / CD
+|       └─  CI / CD
 |
 |--- Server-side Integration
 |        |-- Integrating React with Node.js
 |        |-- Integrating React with Express.js
 |        |-- Integrating React with Django
-|       └─ Integrating React with Ruby on Rails
+|        └─  Integrating React with Ruby on Rails
 |
 |--- Libraries and Tools
 |       |-- Recoil 
@@ -102,18 +102,18 @@ Complete React Roadmap 🔥
 |       |-- SWR (Stale-While-Revalidate)
 |       |-- Vercel (Deployment Platform)
 |       |-- Netlify (Deployment and Hosting)
-|      └─ AWS Amplify (Cloud Services)
+|       └─  AWS Amplify (Cloud Services)
 |
 |--- Mobile and Desktop Applications
 |       |-- React Native (Mobile)
-|      └─ Electron (Desktop)
+|       └─  Electron (Desktop)
 |
 |--- Best Practices and Design Patterns
 |       |-- Component Patterns 
 |       |-- Error Handling Strategies
 |       |-- Code Splitting Patterns
 |       |-- State Management Patterns
-|      └─ Testing Strategies
+|       └─  Testing Strategies
 |
 |─- Community and Learning Resources
         |-- Official React Documentation
@@ -123,7 +123,7 @@ Complete React Roadmap 🔥
         |-- Open Source React Projects
         |-- React Community Events
         |-- Conferences
-       └─ GitHub Repositories
+        └─  GitHub Repositories
 
 ------------------ END -------------------
 ```
