@@ -58,17 +58,3 @@ void pop()
         top--;
     }
 }
-void display()
-{
-    if (top == -1)
-    {
-        printf("stack is empty");
-    }
-    else
-    {
-        for(int i =0; i<=top; i++)
-        {
-            printf("%d\t",stack[i]);
-        }
-    }
-}
