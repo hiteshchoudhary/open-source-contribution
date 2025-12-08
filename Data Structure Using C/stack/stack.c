@@ -31,7 +31,7 @@ int main()
             case 4: break;
             default: printf("Invalid choice");
         }
-    }while(choice!=4);
+    }while(choice!=5);
 }
 
 void push()
