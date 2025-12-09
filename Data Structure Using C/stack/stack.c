@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #define maxsize 10
 
