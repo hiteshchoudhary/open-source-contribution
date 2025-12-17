@@ -8,6 +8,8 @@ void push();
 void pop();
 void display();
 
+void peek();
+
 
 int main()
 {
@@ -19,7 +21,8 @@ int main()
         printf("Press 1 for push\n");
         printf("Press 2 for pop\n");
         printf("Press 3 for display\n");
-        printf("Press 4 for exit\n");
+        printf("Press 4 for peek\n");
+        printf("Press 5 for exit\n");
         printf("enter your choice: ");
         scanf("%d",&choice);
         
@@ -28,10 +31,11 @@ int main()
             case 1: push(); break;
             case 2: pop(); break;
             case 3: display(); break;
-            case 4: break;
+            case 4: peek(); break;
+            case 5: break;
             default: printf("Invalid choice");
         }
-    }while(choice!=4);
+    }while(choice!=5);
 }
 
 void push()
@@ -58,6 +62,7 @@ void pop()
         top--;
     }
 }
+
 void display()
 {
     if (top == -1)
@@ -70,5 +75,17 @@ void display()
         {
             printf("%d\t",stack[i]);
         }
+    }
+}
+
+void peek()
+{
+    if(top == -1)
+    {
+        printf("stack is empty");
+    }
+    else
+    {
+        printf("top element is %d", stack[top]);
     }
 }
