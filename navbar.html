@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #1f1f1f;
+            color: #fff;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #111;
+            padding: 15px 40px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: #00ffcc;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+       
+        li {
+            cursor: pointer;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        li:hover {
+            color: #00ffcc;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">MySite</div>
+
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+</body>
+</html>
