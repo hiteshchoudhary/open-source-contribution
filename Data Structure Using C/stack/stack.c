@@ -66,9 +66,13 @@ void display()
     }
     else
     {
-        for(int i =0; i<=top; i++)
+        for(int i = 0; i <= top; i++)
         {
-            printf("%d\t",stack[i]);
+            printf("%d\t", stack[i]);
         }
+        printf("\nCurrent stack size = %d", top + 1); // added feature
     }
 }
+
+}
+
