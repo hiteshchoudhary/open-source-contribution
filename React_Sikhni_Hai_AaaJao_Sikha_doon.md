@@ -5,7 +5,7 @@ Complete React Roadmap 🔥
 |       |-- JavaScript ES6++++++++++
 |       |-- JSX 
 |       |-- Components 
-|       |-- Props
+|       |-- Propsfffffffffff
 |       |-- State and 
 |       |-- Lifecycle
 |       |-- Events
