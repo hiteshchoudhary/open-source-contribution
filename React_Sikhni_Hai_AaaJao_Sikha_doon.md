@@ -2,14 +2,14 @@
 Complete React Roadmap 🔥
 |
 |--- Fundamentals
-|       |-- JavaScript ES6+
+|       |-- JavaScript ES6++++++++++
 |       |-- JSX 
 |       |-- Components 
-|       |-- Props
+|       |-- Propsfffffffffff
 |       |-- State and 
 |       |-- Lifecycle
 |       |-- Events
-|       |-- Hooks
+|       |-- Hooddddks
 |       |     |- useState
 |       |     |- useEffect
 |       |     |- useContext
