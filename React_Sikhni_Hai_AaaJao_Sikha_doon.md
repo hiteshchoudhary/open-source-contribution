@@ -2,7 +2,7 @@
 Complete React Roadmap 🔥
 |
 |--- Fundamentals
-|       |-- JavaScript ES6+
+|       |-- JavaScript ES6++++++++++
 |       |-- JSX 
 |       |-- Components 
 |       |-- Props
