@@ -7,6 +7,8 @@ int stack[maxsize], top = -1;
 void push();
 void pop();
 void display();
+void peak();// this is for seeing the element from top of the stack 
+
 
 
 int main()
