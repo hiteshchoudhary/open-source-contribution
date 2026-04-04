@@ -7,6 +7,7 @@ int stack[maxsize], top = -1;
 void push();
 void pop();
 void display();
+void empty();
 
 
 int main()
@@ -72,3 +73,11 @@ void display()
         }
     }
 }
+void empty(){
+    if(top==-1){
+        printf("true");
+    }else{
+        printf("false");
+    }
+}
+
