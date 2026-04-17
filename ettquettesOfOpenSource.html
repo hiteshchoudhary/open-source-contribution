@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Open Source Etiquettes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Code+Pro:wght@400;600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --surface: #111720;
+      --border: #1e2d40;
+      --accent: #00c98d;
+      --accent2: #f5a623;
+      --danger: #e05252;
+      --text: #dce8f0;
+      --muted: #6b8a9e;
+      --card: #141c27;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Lato', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      overflow-x: hidden;
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 6rem 8vw;
+      border-bottom: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .hero::after {
+      content: '</>';
+      position: absolute;
+      right: 6vw;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Source Code Pro', monospace;
+      font-size: clamp(8rem, 18vw, 22rem);
+      color: var(--accent);
+      opacity: 0.04;
+      pointer-events: none;
+      font-weight: 600;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.75rem;
+      color: var(--accent);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(3rem, 7vw, 6.5rem);
+      font-weight: 900;
+      line-height: 1.05;
+      max-width: 14ch;
+      margin-bottom: 2rem;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+    }
+
+    .hero h1 span { color: var(--accent); font-style: italic; }
+
+    .hero-desc {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 55ch;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.6s forwards;
+      border-left: 3px solid var(--accent);
+      padding-left: 1.25rem;
+    }
+
+    .hero-scroll {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 8vw;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0;
+      animation: fadeUp 0.8s 1s forwards;
+    }
+
+    .hero-scroll::before {
+      content: '';
+      width: 40px;
+      height: 1px;
+      background: var(--muted);
+    }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(11, 15, 20, 0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 8vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+
+    .nav-logo {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.85rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    /* SECTIONS */
+    section {
+      padding: 6rem 8vw;
+      position: relative;
+    }
+
+    section + section { border-top: 1px solid var(--border); }
+
+    .section-label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      margin-bottom: 3rem;
+      line-height: 1.15;
+    }
+
+    /* PRINCIPLES CARDS */
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .principle-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s, border-color 0.25s;
+    }
+
+    .principle-card:hover { transform: translateY(-4px); border-color: var(--accent); }
+
+    .principle-card::before {
+      content: attr(data-num);
+      position: absolute;
+      top: -0.5rem;
+      right: 1.25rem;
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      font-weight: 900;
+      color: var(--accent);
+      opacity: 0.07;
+      line-height: 1;
+    }
+
+    .principle-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+
+    .principle-card p { font-size: 0.9rem; color: var(--muted); line-height: 1.7; }
+
+    /* SPLIT GRID */
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 768px) { .split-grid { grid-template-columns: 1fr; } }
+
+    .column-head {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid currentColor;
+    }
+
+    .column-head.good { color: var(--accent); }
+    .column-head.bad  { color: var(--danger); }
+
+    .item-list { display: flex; flex-direction: column; gap: 1rem; }
+
+    .item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.1rem 1.25rem;
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .item:hover { transform: translateX(4px); }
+    .good-col .item:hover { border-color: var(--accent); }
+    .bad-col  .item:hover { border-color: var(--danger); }
+
+    .item-icon { font-size: 1.1rem; line-height: 1.6; flex-shrink: 0; }
+
+    .item-text { font-size: 0.92rem; color: var(--text); line-height: 1.65; }
+    .item-text strong { display: block; font-weight: 700; margin-bottom: 0.2rem; }
+
+    /* CHECKLIST */
+    .checklist-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2.5rem;
+      max-width: 700px;
+    }
+
+    .checklist-wrap h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 1.75rem;
+      color: var(--accent2);
+    }
+
+    .checklist {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      font-size: 0.92rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .checklist li:last-child { border-bottom: none; padding-bottom: 0; }
+
+    .check-box {
+      width: 18px;
+      height: 18px;
+      border: 2px solid var(--accent);
+      border-radius: 3px;
+      flex-shrink: 0;
+      margin-top: 2px;
+      position: relative;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .check-box.checked { background: var(--accent); }
+
+    .check-box.checked::after {
+      content: '✓';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bg);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* SHAME CARDS */
+    .shame-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .shame-card {
+      background: var(--card);
+      border: 1px solid #2a1515;
+      border-left: 4px solid var(--danger);
+      border-radius: 6px;
+      padding: 1.5rem;
+    }
+
+    .shame-card .label {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--danger);
+      margin-bottom: 0.5rem;
+    }
+
+    .shame-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .shame-card p  { font-size: 0.85rem; color: var(--muted); line-height: 1.6; }
+
+    /* QUOTE */
+    .quote-block {
+      border-left: 4px solid var(--accent);
+      padding: 1.75rem 2.5rem;
+      background: var(--card);
+      border-radius: 0 8px 8px 0;
+      max-width: 780px;
+    }
+
+    .quote-block blockquote {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+      font-style: italic;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    .quote-block cite {
+      font-size: 0.78rem;
+      font-family: 'Source Code Pro', monospace;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+
+    /* BADGE */
+    .badge {
+      display: inline-block;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.7rem;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 3rem 8vw;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    footer p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-family: 'Source Code Pro', monospace;
+    }
+
+    /* ANIMATIONS */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-logo">// open-source-etiquettes</span>
+  <ul class="nav-links">
+    <li><a href="#principles">Principles</a></li>
+    <li><a href="#dos-donts">Do's &amp; Don'ts</a></li>
+    <li><a href="#checklist">Checklist</a></li>
+    <li><a href="#anti-patterns">Anti-Patterns</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <p class="hero-eyebrow">A guide for contributors</p>
+  <h1>Open Source is a <span>Privilege,</span> not a Playground.</h1>
+  <p class="hero-desc">
+    Every pull request carries weight. Real maintainers spend real time reviewing your work.
+    Before you contribute, ask yourself: <em>does this add genuine value?</em>
+  </p>
+  <div class="hero-scroll">scroll to read</div>
+</header>
+
+<section id="principles">
+  <div class="reveal">
+    <p class="section-label">// 01 — foundation</p>
+    <h2 class="section-title">The Core Principles</h2>
+  </div>
+  <div class="principles-grid">
+    <div class="principle-card reveal" data-num="1">
+      <h3>Value Over Volume</h3>
+      <p>One meaningful contribution is worth more than a hundred trivial ones. Quality signals seriousness; quantity without quality is just noise.</p>
+    </div>
+    <div class="principle-card reveal" data-num="2">
+      <h3>Respect Maintainer Time</h3>
+      <p>Maintainers are often unpaid volunteers. Every review request is time taken from their work and life. Don't waste it on pointless changes.</p>
+    </div>
+    <div class="principle-card reveal" data-num="3">
+      <h3>Understand Before You Act</h3>
+      <p>Read the codebase. Read the CONTRIBUTING.md. Read open and closed issues. Context is not optional — it's the foundation of a good PR.</p>
+    </div>
+    <div class="principle-card reveal" data-num="4">
+      <h3>Solve Real Problems</h3>
+      <p>Great contributions fix bugs, add necessary features, or improve genuine documentation confusion. Trivial cosmetic edits are not contributions.</p>
+    </div>
+    <div class="principle-card reveal" data-num="5">
+      <h3>Communication is Code</h3>
+      <p>How you describe your PR, write commit messages, and respond to reviews matters as much as the code itself. Write clearly and professionally.</p>
+    </div>
+    <div class="principle-card reveal" data-num="6">
+      <h3>Own Your Work</h3>
+      <p>Don't open a PR and disappear. Respond to review comments. If life gets in the way, communicate. Silence after a review is disrespectful.</p>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top: 0; padding-bottom: 4rem; border-top: none;">
+  <div class="quote-block reveal">
+    <blockquote>"Submitting a pull request is not the end goal. Solving a real problem collaboratively, with humility, is."</blockquote>
+    <cite>— The spirit of open source</cite>
+  </div>
+</section>
+
+<section id="dos-donts">
+  <div class="reveal">
+    <p class="section-label">// 02 — behaviour</p>
+    <h2 class="section-title">Do's &amp; Don'ts</h2>
+  </div>
+  <div class="split-grid">
+    <div class="good-col reveal">
+      <div class="column-head good">✦ Do This</div>
+      <div class="item-list">
+        <div class="item">
+          <span class="item-icon">🔍</span>
+          <div class="item-text">
+            <strong>Read the CONTRIBUTING guide first</strong>
+            Every repo has one. It tells you exactly what's expected. Skipping it is the fastest way to get your PR closed.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🐛</span>
+          <div class="item-text">
+            <strong>Open an issue before a PR</strong>
+            Discuss the problem first. Confirm the maintainer wants the change. This saves everyone time.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🧪</span>
+          <div class="item-text">
+            <strong>Test your changes locally</strong>
+            Make sure your code works. Run existing tests. Don't submit broken work and expect the review process to fix it.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">📝</span>
+          <div class="item-text">
+            <strong>Write descriptive commit messages</strong>
+            "Fix null pointer in user auth flow" beats "fix bug" every single time.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🎯</span>
+          <div class="item-text">
+            <strong>Keep PRs focused and small</strong>
+            One PR, one purpose. Smaller diffs are easier to review, easier to merge, and easier to revert if needed.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🙏</span>
+          <div class="item-text">
+            <strong>Accept rejection gracefully</strong>
+            Not every PR gets merged. Learn from feedback. That growth itself is a contribution to your own career.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bad-col reveal">
+      <div class="column-head bad">✕ Avoid This</div>
+      <div class="item-list">
+        <div class="item">
+          <span class="item-icon">🚫</span>
+          <div class="item-text">
+            <strong>Don't add your name to contributor lists</strong>
+            Adding yourself to README contributor sections without real work is shameless self-promotion, not open source.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🚫</span>
+          <div class="item-text">
+            <strong>Don't fix grammar for the sake of a PR</strong>
+            Fixing one comma or rewriting a sentence that was already clear wastes maintainer review time and pollutes the git history.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🚫</span>
+          <div class="item-text">
+            <strong>Don't submit code you don't understand</strong>
+            Pasting AI-generated or copied code you can't explain is dishonest and harmful to the project and to your own learning.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🚫</span>
+          <div class="item-text">
+            <strong>Don't spam issues asking to be assigned</strong>
+            "Can I work on this?" on every open issue without context signals you want credit, not to actually help.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🚫</span>
+          <div class="item-text">
+            <strong>Don't farm contributions for Hacktoberfest swag</strong>
+            Contribution farming for T-shirts and stickers is exactly the kind of pollution that burns out maintainers and harms the community.
+          </div>
+        </div>
+        <div class="item">
+          <span class="item-icon">🚫</span>
+          <div class="item-text">
+            <strong>Don't ignore review feedback</strong>
+            If a maintainer asks for changes, make them or explain your reasoning. Radio silence after a review is rude and unprofessional.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="checklist">
+  <div class="reveal">
+    <p class="section-label">// 03 — before you submit</p>
+    <h2 class="section-title">The Pre-PR Checklist</h2>
+  </div>
+  <div class="checklist-wrap reveal">
+    <h3>⚡ Ask yourself before opening that pull request:</h3>
+    <ul class="checklist">
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Have I read the CONTRIBUTING.md or similar guide in this repo?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Is this change solving a real, confirmed problem — not just something I felt like changing?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Did I open or reference an issue before writing this PR?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Have I tested this locally and confirmed it works correctly?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Are my commit messages descriptive and meaningful?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Is this PR focused on a single concern, not a bundle of unrelated changes?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Have I written a clear PR description explaining what changed and why?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Am I prepared to respond to review comments promptly?</span></li>
+      <li><div class="check-box" onclick="this.classList.toggle('checked')"></div><span>Would I be comfortable if a senior engineer reviewed this PR right now, as-is?</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="anti-patterns">
+  <div class="reveal">
+    <p class="section-label">// 04 — what not to look like</p>
+    <h2 class="section-title">Common Anti-Patterns</h2>
+  </div>
+  <div class="shame-grid">
+    <div class="shame-card reveal">
+      <p class="label">Anti-Pattern #1</p>
+      <h4>The Name Dropper</h4>
+      <p>Opens a PR solely to add their name to a "Contributors" section. No code. No fix. No value. Just a vanity entry in the git history.</p>
+    </div>
+    <div class="shame-card reveal">
+      <p class="label">Anti-Pattern #2</p>
+      <h4>The Grammar Troll</h4>
+      <p>Spends more time fixing commas in README files than understanding the project. Every trivial "typo fix" PR takes a maintainer 10 minutes to review.</p>
+    </div>
+    <div class="shame-card reveal">
+      <p class="label">Anti-Pattern #3</p>
+      <h4>The Hacktoberfest Farmer</h4>
+      <p>Floods repos every October with low-effort PRs to hit a count for free merchandise. Ruins the spirit of the event and burns out real maintainers.</p>
+    </div>
+    <div class="shame-card reveal">
+      <p class="label">Anti-Pattern #4</p>
+      <h4>The Copy-Paste Dev</h4>
+      <p>Submits code generated by AI or copied from Stack Overflow without understanding it. Breaks tests, ignores edge cases, then blames the project.</p>
+    </div>
+    <div class="shame-card reveal">
+      <p class="label">Anti-Pattern #5</p>
+      <h4>The Assign Spammer</h4>
+      <p>Comments "assign me!" on dozens of open issues simultaneously with no prior context. Takes the issue, then disappears without delivering anything.</p>
+    </div>
+    <div class="shame-card reveal">
+      <p class="label">Anti-Pattern #6</p>
+      <h4>The Ghost Contributor</h4>
+      <p>Opens a PR, gets review comments, and never responds. The PR sits open indefinitely, blocking the maintainer from closing or merging anything related.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="reveal">
+    <p class="section-label">// 05 — final word</p>
+    <h2 class="section-title">Open Source is a Community,<br>Not a Resume Line.</h2>
+    <p style="max-width: 65ch; color: var(--muted); font-size: 1rem; line-height: 1.85; margin-bottom: 2rem;">
+      The most respected contributors aren't those with the highest PR count — they're the ones who show up consistently,
+      communicate clearly, solve hard problems, and treat every maintainer interaction with professionalism and gratitude.
+      <br><br>
+      Be the contributor you'd want reviewing your own project someday.
+    </p>
+    <span class="badge">contribute with intention</span>
+  </div>
+</section>
+
+<footer>
+  <p>// etiquettes.html — open source contribution guide</p>
+  <p>-contributed by Shahbaz Khan</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        setTimeout(() => e.target.classList.add('visible'), i * 80);
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
