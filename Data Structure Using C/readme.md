@@ -1,4 +1,5 @@
 # This is my Readme
 
-I added my readme file in this repo.
-Happy to contribute to open source.
+
+I make my first pull request happy to contribute.
+
