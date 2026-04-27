@@ -1,4 +1,3 @@
-```
 Complete React Roadmap 🔥
 |
 |--- Fundamentals
@@ -6,7 +5,7 @@ Complete React Roadmap 🔥
 |       |-- JSX 
 |       |-- Components 
 |       |-- Props
-|       |-- State and 
+|       |-- State
 |       |-- Lifecycle
 |       |-- Events
 |       |-- Hooks
@@ -14,24 +13,34 @@ Complete React Roadmap 🔥
 |       |     |- useEffect
 |       |     |- useContext
 |       |     |- useReducer
-|       |    └ Custom Hooks
-|       |
+|       |     └ Custom Hooks
 |       |-- Functional vs Class Components
 |       |-- Conditional Rendering
 |       |-- Lists and Keys
 |       |-- Forms 
 |       |-- Controlled Components
 |       |-- Fragments
-|      └─ Higher-Order Components
+|       └─ Higher-Order Components
+|
+|--- Modern React (2024+)
+|       |-- Server Components
+|       |-- Client vs Server Components
+|       |-- Server Actions
+|       |-- Concurrent Features
+|       |     └ useTransition, useDeferredValue
+|       └─ Suspense & Streaming
+|
+|--- React Frameworks
+|       |-- Next.js
+|       |-- Routing (App Router / Pages)
+|       |-- Data Fetching
+|       |-- SEO Optimization
+|       └─ Remix
 |
 |--- Advanced Concepts
 |       |-- Context API
-|       |-- Redux 
-|       |-- Redux Basics
-|       |-- Redux Middleware
-|       |-- Thunk
-|       |     └ Saga
-|       |
+|       |-- Redux
+|       |-- Redux Middleware (Thunk, Saga)
 |       |-- React Router 
 |       |-- Error Boundaries
 |       |-- Portals
@@ -40,90 +49,116 @@ Complete React Roadmap 🔥
 |       |-- Lazy Loading
 |       |-- PropTypes
 |       |-- TypeScript
-|      └─ Server-side Rendering 
+|       └─ Server-side Rendering (SSR)
 |
-|--- Styling
+|--- Styling & UI
 |       |-- CSS Modules
 |       |-- Styled Components
-|       |-- CSS-in-JS Libraries
+|       |-- Tailwind CSS
+|       |-- Component Libraries (MUI, ShadCN)
 |       |-- Theming
-|      └─ Responsive Design 
+|       └─ Responsive Design & Accessibility (a11y)
 |
 |--- State Management
-|       |-- Local Component State
-|       |-- Context API for Global State
-|       |-- Redux State Management
-|       |-- MobX State Management
-|       |-- Recoil (Experimental)
-|      └─ Zustand 
+|       |-- Local State
+|       |-- Context API
+|       |-- Redux
+|       |-- MobX
+|       |-- Recoil
+|       └─ Zustand
 |
-|--- Forms and Validation
-|       |-- Formik (Form Library)
-|       |-- Yup (Schema Validation)
-|      └─ Controlled vs Uncontrolled Components
+|--- Forms & Validation
+|       |-- Formik
+|       |-- Yup
+|       └─ Controlled vs Uncontrolled
 |
-|--- GraphQL and APIs
-|       |-- Apollo Client (GraphQL)
+|--- APIs & Data Fetching
+|       |-- REST APIs
 |       |-- Fetch API
 |       |-- Axios
-|       |-- RESTful APIs
-|      └─ Fetching Data in React
+|       |-- GraphQL (Apollo Client)
+|       └─ React Query / SWR
 |
 |--- Performance Optimization
 |       |-- Memoization
-|       |-- PureComponent and React.memo
+|       |-- React.memo / PureComponent
 |       |-- Code Splitting
-|       |-- Server-side Rendering (SSR)
-|       |-- React.lazy and Suspense
-|       |-- Performance Profiling (React DevTools)
-|      └─ Tree Shaking
+|       |-- Lazy Loading
+|       |-- Virtualization
+|       |-- Bundle Analysis
+|       └─ Lighthouse Optimization
 |
 |--- Security
-|       |-- Cross-Site Scripting Prevention
-|       |-- Cross-Site Request Forgery Protection
-|      └─ Content Security Policy (CSP)
+|       |-- XSS Protection
+|       |-- CSRF Protection
+|       |-- Authentication (JWT, OAuth)
+|       |-- Authorization (RBAC)
+|       └─ Secure Storage
 |
-|--- Deployment and Build Tools
+|--- Testing
+|       |-- Jest
+|       |-- React Testing Library
+|       |-- Unit Testing
+|       |-- Integration Testing
+|       └─ E2E Testing (Cypress / Playwright)
+|
+|--- Architecture & Scalability
+|       |-- Folder Structure
+|       |-- Atomic Design Pattern
+|       |-- API Layer Abstraction
+|       |-- Environment Variables
+|       └─ Monorepo (Nx / Turborepo)
+|
+|--- Developer Tools
+|       |-- Vite
 |       |-- Webpack
 |       |-- Babel
 |       |-- ESLint
 |       |-- Prettier
-|      └─ CI / CD
+|       └─ Debugging Tools
 |
-|--- Server-side Integration
-|        |-- Integrating React with Node.js
-|        |-- Integrating React with Express.js
-|        |-- Integrating React with Django
-|       └─ Integrating React with Ruby on Rails
+|--- Deployment
+|       |-- CI/CD
+|       |-- Vercel
+|       |-- Netlify
+|       └─ AWS Amplify
 |
-|--- Libraries and Tools
-|       |-- Recoil 
-|       |-- React Query (Data Fetching Library)
-|       |-- SWR (Stale-While-Revalidate)
-|       |-- Vercel (Deployment Platform)
-|       |-- Netlify (Deployment and Hosting)
-|      └─ AWS Amplify (Cloud Services)
+|--- Server Integration
+|       |-- Node.js
+|       |-- Express.js
+|       |-- Django
+|       └─ Ruby on Rails
 |
-|--- Mobile and Desktop Applications
-|       |-- React Native (Mobile)
-|      └─ Electron (Desktop)
+|--- Projects (MOST IMPORTANT)
+|       |-- Beginner (Todo, Counter)
+|       |-- Intermediate (Blog, Dashboard, Auth)
+|       |-- Advanced (E-commerce, Chat App)
+|       └─ Full-stack Apps
 |
-|--- Best Practices and Design Patterns
-|       |-- Component Patterns 
-|       |-- Error Handling Strategies
+|--- Mobile & Desktop
+|       |-- React Native
+|       └─ Electron
+|
+|--- Best Practices
+|       |-- Component Patterns
+|       |-- State Patterns
+|       |-- Error Handling
 |       |-- Code Splitting Patterns
-|       |-- State Management Patterns
-|      └─ Testing Strategies
+|       └─ Testing Strategies
 |
-|─- Community and Learning Resources
-        |-- Official React Documentation
-        |-- Online Tutorials 
-        |-- React Blogs
-        |-- Medium Articles
-        |-- Open Source React Projects
-        |-- React Community Events
-        |-- Conferences
-       └─ GitHub Repositories
+|--- Contribution Path
+|       |-- Open Source Contributions
+|       |-- Build Reusable Components
+|       |-- Write Docs / Blogs
+|       └─ Publish npm Packages
+|
+|--- Learning Resources
+        |-- Official Docs
+        |-- Blogs & Articles
+        |-- Open Source Projects
+        |-- Community & Events
+        └─ Conferences
+        └─Git hub
+        
 
 ------------------ END -------------------
-```
