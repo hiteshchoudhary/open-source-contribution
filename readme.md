@@ -1,5 +1,11 @@
-# repo refreshed
+# Open Source Practice Repository
 
-Repo is refreshed.
+This repository is created for practicing and learning how to contribute to open source projects.
 
-We are leaning Cohort from [https://piyushgarg.dev/cohort](https://piyushgarg.dev/cohort)
+The main purpose of this repository is to:
+- Learn Git and GitHub workflows
+- Practice commits, branches, pull requests, and rebasing
+- Understand collaboration in open source projects
+- Experiment with different development and contribution techniques
+
+This project is only for educational and practice purposes.
