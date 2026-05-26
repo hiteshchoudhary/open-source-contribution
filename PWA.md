@@ -1,0 +1,6 @@
+- progressive web app 
+- installable web app
+- service worker
+- manifest
+- push notification
+- offline support 
