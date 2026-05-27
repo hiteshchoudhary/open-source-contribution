@@ -1,1 +1,1 @@
-console.log("LMAO")
+nkhconsole.log("LMAO")
