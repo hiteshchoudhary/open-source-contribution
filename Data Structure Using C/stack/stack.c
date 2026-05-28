@@ -32,6 +32,8 @@ int main()
             default: printf("Invalid choice");
         }
     }while(choice!=4);
+
+    printf("My first open source contribution");
 }
 
 void push()
