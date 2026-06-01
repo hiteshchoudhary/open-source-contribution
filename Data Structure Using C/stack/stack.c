@@ -42,7 +42,7 @@ void push()
     }
     else
     {
-        printf("enter value:");
+        printf("enter value(valid integer value only otherwise it'll create an infinite loop):");
         top++;
         scanf("%d",&stack[top]);
     }
