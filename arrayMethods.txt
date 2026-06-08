@@ -1,0 +1,13 @@
+list out all array methods in javascript.
+
+
+Method	Description
+copyWithin()	Copies part of array to another location in the same array
+fill()	Fills all elements with a static value
+pop()	Removes last element and returns it
+push()	Adds elements to the end and returns new length
+reverse()	Reverses the order of elements
+shift()	Removes first element and returns it
+sort()	Sorts elements (default as strings)
+splice()	Adds/removes elements at any position
+unshift()	Adds elements to the beginning and returns new length
