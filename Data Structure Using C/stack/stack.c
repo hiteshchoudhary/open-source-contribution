@@ -38,7 +38,7 @@ void push()
 {
     if(top == maxsize - 1 )
     {
-        printf("stack is overflow");
+        printf("stack is overflow, cannot insert");
     }
     else
     {
