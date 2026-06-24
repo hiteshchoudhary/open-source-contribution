@@ -1,5 +1,5 @@
-# repo refreshed
+# First Contribution (No need to PULL)
 
-Repo is refreshed.
+Genuienly wanna thank you sir for teaching me GIT and Github. Will surely remember you & recommend your videos to my other friends or batchmates.
 
-We are leaning Cohort from [https://piyushgarg.dev/cohort](https://piyushgarg.dev/cohort)
+Thanks a lot :)
