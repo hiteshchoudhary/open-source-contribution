@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourBook - Sign Up</title>
+    <link
+      rel="shortcut icon"
+      href="../social-media-logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body>
+    <div class="auth-container">
+      <h2>Sign Up</h2>
+      <form action="signupForm">
+        <label for="signup-username">Username</label>
+        <input type="text" id="signup-username" name="username" required />
+
+        <label for="signup-email">Email</label>
+        <input type="email" id="signup-email" name="email" required />
+        <!-- Added email field -->
+
+        <label for="signup-password">Password</label>
+        <input type="password" id="signup-password" name="password" required />
+
+        <label for="signup-confirmPass">Confirm Password</label>
+        <input
+          type="password"
+          id="signup-confirmPass"
+          name="confirmPass"
+          required
+        />
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="login-prompt">
+        <p>
+          Already have an account? <a href="../loginPage/login.html">Login</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="signup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <title>StoreShop</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="left-section">
+                <div class="logo">Store<span>Shop</span></div>
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About</li>
+            </ul>
+            <div class="right-section">
+                <form id="search-form">
+                    <input type="text" id="search-input" placeholder="What are you looking for?">
+                    <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+                <li>
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero-section">
+            <div class="hero-slider">
+                <div class="hero-slide">
+                    <img src="./assets/Frame 560.png" alt="" srcset="">
+                </div>
+
+                <div class="hero-slide">
+                    <img src="./assets/Frame 600.png" alt="" srcset="">
+                </div>
+
+                <div class="hero-slide">
+                    <img src="./assets/frame 900.jpg" alt="" srcset="">
+                </div>
+            </div>
+            </div>
+            <button class="slider-nav prev" onclick="changeSlide(-1)">❮</button>
+            <button class="slider-nav next" onclick="changeSlide(1)">❯</button>
+            <div class="slider-dots"></div>
+        </section>
+    </main>
+    <!-- products -->
+    <main>
+        <div class="product-grid">
+            <!-- products card will be inserted here -->
+
+
+            <!-- <div class="product-card">
+                <img src="./assets/product1.jpg" alt="Product 1">
+                <h3>Smartphone X</h3>
+                <p class="price">$699.99</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <span>(4.0)</span>
+                </div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+
+        </div> -->
+
+        </div>
+        <section class="shopping-cart">
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total">Total: ₹0.00</div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        </section>
+        
+
+        
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Store Shop</h3>
+                <p>ABC House, Building N0. 07, Your City, Your Country</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="icon-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="icon-btn"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="icon-btn"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icon-btn"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 StoreShop. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="shopping.js"></script>
+</body>
+
+</html>

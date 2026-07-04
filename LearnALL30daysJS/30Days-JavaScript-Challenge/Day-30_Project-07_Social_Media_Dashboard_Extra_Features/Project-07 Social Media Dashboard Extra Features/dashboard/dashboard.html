@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourBook - Home</title>
+    <meta
+      name="description"
+      content="YourBook is a social media platform for sharing posts and connecting with friends."
+    />
+    <meta name="keywords" content="social media, posts, connect, friends" />
+    <meta property="og:title" content="YourBook - Home" />
+    <meta
+      property="og:description"
+      content="Share posts and connect with friends on YourBook."
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+    <link
+      rel="shortcut icon"
+      href="../social-media-logo.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">YourBook</div>
+        <h1>
+          Welcome,
+          <span id="username-placeholder" aria-label="Username">Guest</span>!
+        </h1>
+        <div class="nav-links">
+          <button id="profile-button" class="nav-button" aria-label="Profile">
+            <i class="fas fa-user"></i> Profile
+          </button>
+          <button
+            id="notification-button"
+            class="nav-button"
+            aria-label="Notifications"
+          >
+            <i class="fas fa-bell"></i>
+            <span id="notification-count" class="notification-count hidden"
+              >0</span
+            >
+          </button>
+          <button class="logout-button nav-button" aria-label="Logout">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+          <button
+            class="delete-account-button nav-button"
+            aria-label="Delete Account"
+          >
+            <i class="fas fa-user-slash"></i> Delete Account
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="dashboard-container">
+      <div id="posts-container" aria-live="polite"></div>
+      <button id="add-post-button" class="round-button" aria-label="Add Post">
+        <i class="fas fa-plus"></i>
+      </button>
+
+      <div id="post-form-container" class="post-form-container hidden">
+        <h2>Create a Post</h2>
+        <textarea
+          id="post-content"
+          placeholder="What's on your mind?"
+          aria-label="Post Content"
+        ></textarea>
+        <label for="post-image" class="file-input-label">Choose an Image</label>
+        <input
+          type="file"
+          id="post-image"
+          accept="image/*"
+          aria-label="Post Image"
+        />
+
+        <div id="file-preview" class="file-preview">
+          <p id="file-name" class="file-name"></p>
+        </div>
+
+        <div class="form-buttons">
+          <button id="submit-post-button">Post</button>
+          <button id="cancel-post-button">Cancel</button>
+        </div>
+      </div>
+    </main>
+
+    <div
+      id="profile-modal"
+      class="modal hidden"
+      aria-labelledby="profile-modal-label"
+    >
+      <div class="modal-content">
+        <h2 id="profile-modal-label">User Profile</h2>
+        <div id="profile-info">
+          <p>Username <span id="profile-username"></span></p>
+          <p>Email <span id="profile-email"></span></p>
+        </div>
+        <div id="edit-profile-form" class="hidden">
+          <input
+            type="text"
+            id="edit-username"
+            placeholder="New Username"
+            aria-label="Edit Username"
+          />
+          <input
+            type="email"
+            id="edit-email"
+            placeholder="New Email"
+            aria-label="Edit Email"
+          />
+        </div>
+        <button id="edit-profile-button">Edit Profile</button>
+        <button id="save-profile-button" class="hidden">Save Changes</button>
+        <button id="close-profile-modal" aria-label="Close Profile Modal">
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script src="./dashboard.js"></script>
+  </body>
+</html>

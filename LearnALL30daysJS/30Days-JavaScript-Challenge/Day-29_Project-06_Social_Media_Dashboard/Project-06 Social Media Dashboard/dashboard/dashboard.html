@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourBook - Home</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../social-media-logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="dashboard-container">
+      <h1>Welcome, <span id="username-placeholder">Guest</span>!</h1>
+      <div class="buttons-container">
+        <button id="themeToggleButton" class="theme-toggle-button">
+          <i id="themeIcon" class="fas fa-moon"></i>
+        </button>
+        <button class="logout-button">Logout</button>
+        <button class="delete-account-button">Delete Account</button>
+      </div>
+
+      <div id="posts-container"></div>
+
+      <!-- Post Creation Form (Hidden by default) -->
+      <div id="post-form-container" class="post-form-container hidden">
+        <h2>Create a Post</h2>
+        <form id="postForm">
+          <textarea
+            id="postText"
+            placeholder="What's on your mind?"
+            rows="4"
+            required
+          ></textarea>
+          <input type="file" id="postImage" accept="image/*" />
+          <button type="submit">Post</button>
+          <button type="button" id="cancelPost">Cancel</button>
+        </form>
+      </div>
+
+      <!-- Post Button -->
+      <button id="post-button" class="round-button">+</button>
+    </div>
+
+    <!-- Comment Form (Hidden by default) -->
+    <div id="comment-form-container" class="comment-form-container hidden">
+      <h2>Add a Comment</h2>
+      <form id="commentForm">
+        <textarea
+          id="commentText"
+          placeholder="Write a comment..."
+          rows="3"
+          required
+        ></textarea>
+        <button type="submit">Comment</button>
+        <button type="button" id="cancelComment">Cancel</button>
+      </form>
+    </div>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

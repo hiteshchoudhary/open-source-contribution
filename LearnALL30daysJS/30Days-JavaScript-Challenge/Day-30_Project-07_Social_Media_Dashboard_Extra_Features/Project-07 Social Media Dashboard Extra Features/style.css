@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f4f4f4, #e2e2e2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 1000px;
+  height: 500px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.demo-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 12px;
+}
+
+.logo-header {
+  font-size: 2.3rem;
+  color: #333;
+  margin-left: 10px;
+  letter-spacing: 1.2px;
+}
+
+.yourBook {
+  color: #1655c0;
+}
+
+.button-section {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.button-section h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  display: block;
+  margin: 15px 20px;
+  padding: 12px 20px;
+  background-color: #1877f2;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1655c0;
+  transform: scale(1.02);
+}
+
+.btn:active {
+  background-color: #1655c0;
+  transform: scale(0.98);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    width: 60%;
+  }
+
+  .image-section,
+  .button-section {
+    flex: none;
+    width: 60%;
+  }
+
+  .button-section h1 {
+    font-size: 20px;
+  }
+
+  .btn {
+    display: block;
+    margin: 15px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .button-section h1 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 10px;
+    width: 100%;
+  }
+
+  .button-section h1 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 12px;
+    padding: 8px 18px;
+  }
+}

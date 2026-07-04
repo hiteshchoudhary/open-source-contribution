@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YourBook - Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link
+      rel="shortcut icon"
+      href="../social-media-logo.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="auth-container">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label for="loginUsername">Username</label>
+        <input
+          placeholder="Enter your username"
+          type="text"
+          id="loginUsername"
+          name="username"
+          required
+        />
+
+        <label for="loginPassword">Password</label>
+        <input
+          placeholder="Enter your password"
+          type="password"
+          id="loginPassword"
+          name="password"
+          required
+        />
+
+        <button type="submit">Login</button>
+      </form>
+      <div class="signup-prompt">
+        <p>
+          Don't have an account? <a href="../signupPage/signup.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="login.js"></script>
+  </body>
+</html>

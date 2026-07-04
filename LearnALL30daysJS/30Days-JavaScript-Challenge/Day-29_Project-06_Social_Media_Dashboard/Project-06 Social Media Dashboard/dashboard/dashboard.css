@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+
+/* Dark and Light Mode  */
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Dark Mode Specific Styles */
+.dark-mode .dashboard-container h1 {
+  color: #ffbb00;
+}
+
+.dark-mode #username-placeholder {
+  color: #1877f2;
+}
+
+.dark-mode .logout-button {
+  background-color: #3b5998;
+}
+
+.dark-mode .logout-button:hover {
+  background-color: #2d4373;
+}
+
+.dark-mode .delete-account-button {
+  background-color: #c0392b;
+}
+
+.dark-mode .delete-account-button:hover {
+  background-color: #a0291e;
+}
+
+.dark-mode .round-button {
+  background-color: #ffbb00;
+}
+
+.dark-mode .round-button:hover {
+  background-color: #ffa500;
+}
+
+.dark-mode .post-form-container,
+.dark-mode .comment-form-container {
+  background-color: #444;
+  color: #fff;
+}
+
+.dark-mode .post-form-container button,
+.dark-mode .comment-form-container button {
+  background-color: #1877f2;
+  color: #fff;
+}
+
+.dark-mode .post-form-container button:hover,
+.dark-mode .comment-form-container button:hover {
+  background-color: #1655c0;
+}
+
+.dark-mode .post-form-container button#cancelPost,
+.dark-mode .comment-form-container button#cancelComment {
+  background-color: #d32f2f;
+}
+
+.dark-mode .post-form-container button#cancelPost:hover,
+.dark-mode .comment-form-container button#cancelComment:hover {
+  background-color: #b71c1c;
+}
+
+.dark-mode .post {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+/* Theme Toggle Button */
+.theme-toggle-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode .theme-toggle-button {
+  color: #ffbb00;
+}
+
+/* Dashboard  */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+.dashboard-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1877f2;
+}
+
+#username-placeholder {
+  color: #2c85fa;
+}
+
+/* Container for buttons */
+.buttons-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* General button styling */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Logout button styling */
+.logout-button {
+  background-color: #4267b2;
+  color: #fff;
+}
+
+.logout-button:hover {
+  background-color: #365899;
+}
+
+/* Delete account button styling */
+.delete-account-button {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.delete-account-button:hover {
+  background-color: #c0392b;
+}
+
+/* Posts container styling */
+.posts-container {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+/* Post styling */
+.post {
+  margin: 10px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  position: relative;
+}
+
+.post img {
+  max-width: 100%;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.post .post-text {
+  margin-bottom: 10px;
+}
+
+.post .post-username {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #4267b2;
+}
+
+/* Post form and comment form container styling */
+.post-form-container,
+.comment-form-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 90%;
+  max-width: 500px;
+}
+
+.post-form-container h2,
+.comment-form-container h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-form-container textarea,
+.comment-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.post-form-container input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.post-form-container button,
+.comment-form-container button {
+  padding: 10px 20px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.post-form-container button:hover,
+.comment-form-container button:hover {
+  background-color: #2c85fa;
+}
+
+.post-form-container button#cancelPost,
+.comment-form-container button#cancelComment {
+  background-color: #f44336;
+}
+
+.post-form-container button#cancelPost:hover,
+.comment-form-container button#cancelComment:hover {
+  background-color: #d32f2f;
+}
+
+.round-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.round-button:hover {
+  background-color: #1655c0;
+}
+
+.hidden {
+  display: none;
+}
+
+.like-button {
+  cursor: pointer;
+  font-size: 20px;
+  color: #606770;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.like-button.liked i {
+  color: #ff0000;
+}

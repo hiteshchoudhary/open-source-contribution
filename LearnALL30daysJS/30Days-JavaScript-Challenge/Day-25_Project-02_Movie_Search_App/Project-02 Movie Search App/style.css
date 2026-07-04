@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --background-color: #141414;
+  --primary-color: #e50914;
+  --text-color: #ffffff;
+  --card-color: #181818;
+  --hover-color: #282828;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#search-input {
+  width: 60%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #333;
+  color: var(--text-color);
+  border-radius: 4px 0 0 4px;
+}
+
+#search-button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+  background-color: #f40612;
+}
+
+#results-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 80px;
+}
+
+.movie-card {
+  background-color: var(--card-color);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.movie-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 1rem;
+}
+
+.movie-info h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.movie-info p {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.more-info {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.more-info:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: var(--card-color);
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+#modal-body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#modal-body img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.movie-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.movie-details h2 {
+  margin-bottom: 1rem;
+}
+
+.movie-details p {
+  margin-bottom: 0.5rem;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+#pagination button {
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+  background-color: var(--hover-color);
+}
+
+#pagination button.active {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    flex-direction: column;
+  }
+
+  #search-input,
+  #search-button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  #search-input {
+    margin-bottom: 1rem;
+  }
+
+  .modal-content {
+    width: 95%;
+  }
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 20px;
+  left: 39%;
+  z-index: 10;
+  cursor: pointer;
+}

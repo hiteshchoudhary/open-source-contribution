@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #2b2d35;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.2rem;
+  line-height: 1.2;
+  color: white;
+}
+
+.container span {
+  font-size: 2.6rem;
+  color: #ffbd00;
+}
+
+.weather-info {
+  margin-bottom: 10px;
+}
+
+.search input {
+  padding: 10px;
+  width: calc(100% - 22px);
+  margin-bottom: 10px;
+}
+
+.search button {
+  padding: 10px;
+  width: 100%;
+  margin-top: 18px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background: #0066da;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  margin-top: -8px;
+}
+
+.weather-info h2 {
+  color: #51a5ff;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-info p {
+  font-size: 1.3rem;
+  display: flex;
+  color: #e3f4fe;
+  flex-direction: column;
+  margin-top: -8px;
+}
+
+.weather-info p:nth-child(3) {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  text-align: center;
+}
+
+.forecast div {
+  border: 2px solid gray;
+  margin: 10px 12px;
+  border-radius: 7px;
+}
+
+.forecast div p:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forecast div:hover {
+  background-color: #2f5580;
+  border: none;
+  transition: all ease-in 0.3s;
+  color: white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="./favicon-todo.png" type="image/x-icon" />
+    <title>Task Management App</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Task Management App</h1>
+    </header>
+
+    <main>
+      <div class="container">
+        <section class="add-task">
+          <form id="task-form">
+            <div class="form-group">
+              <label for="task-title">Title</label>
+              <input
+                type="text"
+                id="task-title"
+                placeholder="Enter task title"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="task-description">Description</label>
+              <textarea
+                id="task-description"
+                placeholder="Enter task description"
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Date</label>
+              <input type="date" id="date" required />
+            </div>
+
+            <button type="submit" class="add-task-btn">Add Task</button>
+          </form>
+        </section>
+
+        <section class="task-list">
+          <h2>Tasks</h2>
+          <div id="task-container">
+            <!-- Tasks will appear here -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <h3 class="footer-text">
+      Copyrights <span>© ChinmayKaitade</span> | All Rights Reserved.
+    </h3>
+
+    <script src="script.js"></script>
+  </body>
+</html>
