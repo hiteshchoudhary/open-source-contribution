@@ -20,7 +20,7 @@ int main()
         printf("Press 2 for pop\n");
         printf("Press 3 for display\n");
         printf("Press 4 for exit\n");
-        printf("enter your choice: ");
+        printf("enter your choice(1 to 4): ");
         scanf("%d",&choice);
         
         switch(choice)
