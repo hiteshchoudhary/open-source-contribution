@@ -3,10 +3,10 @@ Complete React Roadmap 🔥
 |
 |--- Fundamentals
 |       |-- JavaScript ES6+
-|       |-- JSX 
-|       |-- Components 
+|       |-- JSX
+|       |-- Components
 |       |-- Props
-|       |-- State and 
+|       |-- State and
 |       |-- Lifecycle
 |       |-- Events
 |       |-- Hooks
@@ -19,20 +19,20 @@ Complete React Roadmap 🔥
 |       |-- Functional vs Class Components
 |       |-- Conditional Rendering
 |       |-- Lists and Keys
-|       |-- Forms 
+|       |-- Forms
 |       |-- Controlled Components
 |       |-- Fragments
 |      └─ Higher-Order Components
 |
 |--- Advanced Concepts
 |       |-- Context API
-|       |-- Redux 
+|       |-- Redux
 |       |-- Redux Basics
 |       |-- Redux Middleware
 |       |-- Thunk
 |       |     └ Saga
 |       |
-|       |-- React Router 
+|       |-- React Router
 |       |-- Error Boundaries
 |       |-- Portals
 |       |-- Render Props
@@ -40,14 +40,14 @@ Complete React Roadmap 🔥
 |       |-- Lazy Loading
 |       |-- PropTypes
 |       |-- TypeScript
-|      └─ Server-side Rendering 
+|      └─ Server-side Rendering
 |
 |--- Styling
 |       |-- CSS Modules
 |       |-- Styled Components
 |       |-- CSS-in-JS Libraries
 |       |-- Theming
-|      └─ Responsive Design 
+|      └─ Responsive Design
 |
 |--- State Management
 |       |-- Local Component State
@@ -55,7 +55,7 @@ Complete React Roadmap 🔥
 |       |-- Redux State Management
 |       |-- MobX State Management
 |       |-- Recoil (Experimental)
-|      └─ Zustand 
+|      └─ Zustand
 |
 |--- Forms and Validation
 |       |-- Formik (Form Library)
@@ -97,7 +97,7 @@ Complete React Roadmap 🔥
 |       └─ Integrating React with Ruby on Rails
 |
 |--- Libraries and Tools
-|       |-- Recoil 
+|       |-- Recoil
 |       |-- React Query (Data Fetching Library)
 |       |-- SWR (Stale-While-Revalidate)
 |       |-- Vercel (Deployment Platform)
@@ -109,7 +109,7 @@ Complete React Roadmap 🔥
 |      └─ Electron (Desktop)
 |
 |--- Best Practices and Design Patterns
-|       |-- Component Patterns 
+|       |-- Component Patterns
 |       |-- Error Handling Strategies
 |       |-- Code Splitting Patterns
 |       |-- State Management Patterns
@@ -117,7 +117,7 @@ Complete React Roadmap 🔥
 |
 |─- Community and Learning Resources
         |-- Official React Documentation
-        |-- Online Tutorials 
+        |-- Online Tutorials
         |-- React Blogs
         |-- Medium Articles
         |-- Open Source React Projects
