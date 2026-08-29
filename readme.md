@@ -1,4 +1,4 @@
-# repo refreshed
+# repo refreshed.
 
 Repo is refreshed.
 
