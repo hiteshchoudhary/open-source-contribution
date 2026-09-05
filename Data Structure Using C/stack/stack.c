@@ -14,7 +14,7 @@ int main()
     int choice;
     
     do
-    {
+    {//thnjgnv f mbnnb,vjbfc.k
         printf("\n----stack----\n");
         printf("Press 1 for push\n");
         printf("Press 2 for pop\n");
