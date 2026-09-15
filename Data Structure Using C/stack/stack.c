@@ -7,6 +7,7 @@ void push();
 void pop();
 int size();
 void display();
+bool isEmpty();
 
 
 int main()
@@ -73,4 +74,8 @@ void display()
 // returns length of stack
 int size() {
     return top + 1;
+}
+
+bool isEmpty() {
+    return top==-1;
 }
