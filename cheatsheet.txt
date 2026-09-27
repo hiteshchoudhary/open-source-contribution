@@ -1,0 +1,664 @@
+JavaScript Cheat Sheet 🚀
+Since you're learning JavaScript for MERN + DSA, here's a practical cheat sheet focused on the things you'll actually use.
+1. Variables
+let age = 20;        // can change
+const name = "Adarsh"; // cannot reassign
+var city = "Kanpur"; // old style
+
+Easy trick
+const = constant
+let = later change
+var = avoid in modern JS
+
+let x = 10;
+x = 20;       // ✅
+
+const y = 10;
+y = 20;       // ❌
+
+2. Data Types
+let name = "Adarsh";       // String
+let age = 20;              // Number
+let isStudent = true;      // Boolean
+let x;                     // Undefined
+let y = null;              // Null
+let big = 123n;            // BigInt
+let id = Symbol("id");     // Symbol
+
+Check type:
+typeof name;       // "string"
+typeof age;        // "number"
+typeof true;       // "boolean"
+
+3. Strings
+let str = "Hello JavaScript";
+
+str.length;
+str[0];
+
+str.toUpperCase();
+str.toLowerCase();
+
+str.includes("Java");
+str.startsWith("Hello");
+str.endsWith("Script");
+
+str.indexOf("Java");
+str.slice(0, 5);
+str.substring(0, 5);
+
+str.replace("JavaScript", "JS");
+str.trim();
+
+str.split(" ");
+
+Template literals ⭐
+let name = "Adarsh";
+let age = 20;
+
+console.log(`My name is ${name} and I am ${age}`);
+
+4. Arrays
+let arr = [10, 20, 30, 40];
+
+Basic
+arr.length;
+
+arr[0];
+
+arr.push(50);       // add end
+arr.pop();          // remove end
+
+arr.unshift(5);     // add beginning
+arr.shift();        // remove beginning
+
+Important methods
+arr.includes(20);
+
+arr.indexOf(30);
+
+arr.slice(1, 3);
+
+arr.splice(1, 2);
+
+map() ⭐
+Creates a new array.
+let nums = [1, 2, 3, 4];
+
+let doubled = nums.map(x => x * 2);
+
+console.log(doubled);
+// [2, 4, 6, 8]
+
+filter() ⭐
+Keeps elements satisfying condition.
+let nums = [1, 2, 3, 4, 5];
+
+let even = nums.filter(x => x % 2 === 0);
+
+// [2, 4]
+
+reduce() ⭐
+Converts array into one result.
+let nums = [1, 2, 3, 4];
+
+let sum = nums.reduce((total, x) => total + x, 0);
+
+// 10
+
+find()
+let x = nums.find(x => x > 2);
+
+// 3
+
+some()
+nums.some(x => x > 3);
+// true
+
+every()
+nums.every(x => x > 0);
+// true
+
+5. Sorting
+Numbers
+⚠️ Don't do:
+arr.sort();
+
+Because JavaScript sorts as strings by default.
+Use:
+arr.sort((a, b) => a - b); // ascending
+arr.sort((a, b) => b - a); // descending
+
+Example:
+let arr = [10, 2, 30, 5];
+
+arr.sort((a, b) => a - b);
+
+// [2, 5, 10, 30]
+
+6. Objects
+const user = {
+    name: "Adarsh",
+    age: 20,
+    city: "Kanpur"
+};
+
+Access:
+user.name;
+user["age"];
+
+Modify:
+user.age = 21;
+
+Add:
+user.email = "abc@gmail.com";
+
+Delete:
+delete user.city;
+
+7. Object Methods
+Object.keys(user);
+Object.values(user);
+Object.entries(user);
+
+Example:
+Object.keys(user);
+
+// ["name", "age", "email"]
+
+8. Destructuring ⭐
+Array
+let arr = [10, 20, 30];
+
+let [a, b, c] = arr;
+
+console.log(a); // 10
+
+Object
+const user = {
+    name: "Adarsh",
+    age: 20
+};
+
+const { name, age } = user;
+
+9. Spread Operator ... ⭐
+Array
+let a = [1, 2, 3];
+
+let b = [...a, 4, 5];
+
+// [1,2,3,4,5]
+
+Object
+let user = {
+    name: "Adarsh",
+    age: 20
+};
+
+let updatedUser = {
+    ...user,
+    age: 21
+};
+
+Think:
+... = spread/copy
+
+10. Rest Operator ...
+Looks the same but behaves differently.
+function sum(...nums) {
+    return nums.reduce((a, b) => a + b, 0);
+}
+
+sum(1, 2, 3, 4);
+
+Here ...nums collects values.
+Spread → expand
+Rest → collect
+
+11. Functions
+Normal
+function add(a, b) {
+    return a + b;
+}
+
+Arrow function ⭐
+const add = (a, b) => {
+    return a + b;
+};
+
+Short:
+const add = (a, b) => a + b;
+
+12. Conditions
+if (age >= 18) {
+    console.log("Adult");
+} else {
+    console.log("Minor");
+}
+
+Ternary
+let result = age >= 18 ? "Adult" : "Minor";
+
+Think:
+condition ? true : false
+
+13. == vs === ⭐
+5 == "5";     // true
+5 === "5";    // false
+
+Remember
+== → value comparison + type conversion
+=== → value + type comparison
+
+Prefer:
+===
+
+14. Loops
+for
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+
+for...of
+Best for values:
+for (let x of arr) {
+    console.log(x);
+}
+
+for...in
+Best for object keys:
+for (let key in user) {
+    console.log(key);
+}
+
+while
+while (condition) {
+    // code
+}
+
+15. break and continue
+for (let i = 0; i < 10; i++) {
+
+    if (i === 5)
+        break;
+}
+
+break → stop loop.
+if (i === 5)
+    continue;
+
+continue → skip current iteration.
+16. Math
+Math.max(10, 20, 30);
+Math.min(10, 20, 30);
+
+Math.floor(4.9);   // 4
+Math.ceil(4.1);    // 5
+Math.round(4.5);   // 5
+
+Math.abs(-10);     // 10
+
+Math.pow(2, 3);    // 8
+
+Math.random();
+
+17. Number Conversion
+Number("123");      // 123
+
+parseInt("123");    // 123
+parseFloat("12.5"); // 12.5
+
+String(123);        // "123"
+
+18. Sets ⭐
+Useful for unique values.
+let set = new Set();
+
+set.add(10);
+set.add(20);
+set.add(10);
+
+console.log(set);
+// {10, 20}
+
+Check:
+set.has(10);
+
+Delete:
+set.delete(10);
+
+Size:
+set.size;
+
+Convert to array:
+let arr = [...set];
+
+DSA use
+Remove duplicates:
+let unique = [...new Set(arr)];
+
+19. Map ⭐
+Useful for key-value pairs and frequency counting.
+let map = new Map();
+
+map.set("apple", 5);
+map.set("banana", 3);
+
+Get:
+map.get("apple");
+
+Check:
+map.has("apple");
+
+Delete:
+map.delete("apple");
+
+Size:
+map.size;
+
+Frequency counting
+let freq = new Map();
+
+for (let x of arr) {
+    freq.set(x, (freq.get(x) || 0) + 1);
+}
+
+This is very important for DSA.
+20. Optional Chaining ?.
+Prevents errors when something doesn't exist.
+user?.address?.city
+
+Instead of:
+user.address.city
+
+which could cause an error if address is missing.
+21. Nullish Coalescing ??
+let name = null;
+
+let result = name ?? "Guest";
+
+console.log(result);
+// Guest
+
+Means:
+If left side is null or undefined, use right side.
+
+22. Logical Operators
+&&   // AND
+||   // OR
+!    // NOT
+
+Example:
+age >= 18 && hasID;
+
+23. Optional Default Parameters
+function greet(name = "Guest") {
+    console.log(`Hello ${name}`);
+}
+
+greet();
+
+Output:
+Hello Guest
+
+24. JSON ⭐
+Very important for MERN/API.
+Object → JSON:
+const json = JSON.stringify(user);
+
+JSON → Object:
+const obj = JSON.parse(json);
+
+25. DOM
+Select element:
+document.getElementById("title");
+
+document.querySelector(".box");
+
+document.querySelectorAll(".box");
+
+Change text:
+element.textContent = "Hello";
+
+Change HTML:
+element.innerHTML = "<b>Hello</b>";
+
+Change style:
+element.style.color = "red";
+
+26. Events
+button.addEventListener("click", () => {
+    console.log("Clicked");
+});
+
+Common events:
+click
+submit
+change
+input
+mouseover
+keydown
+keyup
+
+27. Async JavaScript ⭐⭐⭐
+Promise
+const promise = new Promise((resolve, reject) => {
+
+    if (success) {
+        resolve("Done");
+    } else {
+        reject("Error");
+    }
+
+});
+
+async/await
+async function getData() {
+
+    const response = await fetch("/api/users");
+
+    const data = await response.json();
+
+    console.log(data);
+}
+
+try/catch
+try {
+    // risky code
+} catch (error) {
+    console.log(error);
+}
+
+28. Fetch API
+GET:
+const response = await fetch("/api/users");
+
+const data = await response.json();
+
+POST:
+const response = await fetch("/api/users", {
+    method: "POST",
+
+    headers: {
+        "Content-Type": "application/json"
+    },
+
+    body: JSON.stringify({
+        name: "Adarsh",
+        age: 20
+    })
+});
+
+29. Modules
+Export
+export const add = (a, b) => a + b;
+
+Import
+import { add } from "./math.js";
+
+Default:
+export default add;
+
+import add from "./math.js";
+
+30. Classes
+class User {
+
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        console.log(`Hello ${this.name}`);
+    }
+}
+
+const user = new User("Adarsh", 20);
+
+user.greet();
+
+31. this
+Inside an object:
+const user = {
+    name: "Adarsh",
+
+    greet() {
+        console.log(this.name);
+    }
+};
+
+this → generally refers to the object that is calling the method.
+32. Important DSA JavaScript
+Array as stack
+let stack = [];
+
+stack.push(10);
+stack.push(20);
+
+stack.pop();
+
+Queue
+let queue = [];
+
+queue.push(10);
+queue.push(20);
+
+queue.shift();
+
+For large DSA problems, shift() can be inefficient; use an index:
+let queue = [10, 20, 30];
+let front = 0;
+
+console.log(queue[front++]);
+
+33. String ↔ Array
+String to array:
+let arr = "hello".split("");
+
+Array to string:
+arr.join("");
+
+Reverse:
+let reversed = str.split("").reverse().join("");
+
+34. Common DSA Patterns
+Frequency
+const freq = {};
+
+for (const x of arr) {
+    freq[x] = (freq[x] || 0) + 1;
+}
+
+Two Pointer
+let left = 0;
+let right = arr.length - 1;
+
+while (left < right) {
+
+    if (arr[left] + arr[right] === target) {
+        // found
+    }
+
+    if (arr[left] + arr[right] < target)
+        left++;
+    else
+        right--;
+}
+
+Sliding Window
+let left = 0;
+let sum = 0;
+
+for (let right = 0; right < arr.length; right++) {
+
+    sum += arr[right];
+
+    while (sum > target) {
+        sum -= arr[left];
+        left++;
+    }
+}
+
+35. The Most Important Methods to Memorize
+For your MERN + DSA, focus on these first:
+ARRAY
+├── push()
+├── pop()
+├── shift()
+├── unshift()
+├── slice()
+├── splice()
+├── map()
+├── filter()
+├── reduce()
+├── find()
+├── some()
+├── every()
+├── includes()
+├── indexOf()
+├── sort()
+└── reverse()
+
+STRING
+├── length
+├── slice()
+├── substring()
+├── includes()
+├── indexOf()
+├── split()
+├── trim()
+├── replace()
+├── toUpperCase()
+└── toLowerCase()
+
+OBJECT
+├── Object.keys()
+├── Object.values()
+└── Object.entries()
+
+DSA
+├── Set
+├── Map
+├── Math
+├── sort()
+└── Array methods
+
+ASYNC
+├── Promise
+├── async
+├── await
+├── fetch()
+└── try/catch
+
+🧠 One-line memory trick
+map     → transform
+filter  → select
+reduce  → combine
+find    → first matching element
+some    → at least one?
+every   → all?
+includes → exists?
+Set     → unique values
+Map     → key → value
