@@ -6,7 +6,7 @@ Complete React Roadmap 🔥
 |       |-- JSX 
 |       |-- Components 
 |       |-- Props
-|       |-- State and 
+|       |-- State 
 |       |-- Lifecycle
 |       |-- Events
 |       |-- Hooks
