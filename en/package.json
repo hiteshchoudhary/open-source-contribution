@@ -1,0 +1,15 @@
+{
+  "name": "en",
+  "version": "1.0.0",
+  "description": "This is My First OpenSource Contribution.",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "canvas": "^3.2.3"
+  }
+}
