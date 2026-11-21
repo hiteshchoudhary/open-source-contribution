@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "canvas", "canvas.vcxproj", "{90D75E7A-41A0-8814-61A2-B5859FC0E033}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Release|x64 = Release|x64
+		Debug|x64 = Debug|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90D75E7A-41A0-8814-61A2-B5859FC0E033}.Release|x64.ActiveCfg = Release|x64
+		{90D75E7A-41A0-8814-61A2-B5859FC0E033}.Release|x64.Build.0 = Release|x64
+		{90D75E7A-41A0-8814-61A2-B5859FC0E033}.Debug|x64.ActiveCfg = Debug|x64
+		{90D75E7A-41A0-8814-61A2-B5859FC0E033}.Debug|x64.Build.0 = Debug|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
